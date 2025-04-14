@@ -1,0 +1,3837 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QueueTech</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://queuetech.co/assets/front/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://queuetech.co/assets/front/css/style.css?v=" rel="preload" as="style">
+    <link rel="stylesheet" type="text/css" href="https://queuetech.co/assets/front/css/ac.css?v=" rel="preload" as="style">
+    <link rel="stylesheet" type="text/css" href="https://queuetech.co/assets/front/css/vendor.css?=v11" rel="preload" as="style">
+    <link rel="stylesheet" type="text/css" href="https://queuetech.co/assets/front/css/responsive.css" rel="preload" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="https://queuetech.co/assets/front/css/owl.carousel.min.css" rel="preload" as="style">
+    <link rel="stylesheet" type="text/css" href="https://queuetech.co/assets/front/css/slick.min.css" rel="preload" as="style">
+    <link rel="stylesheet" type="text/css" href="https://queuetech.co/assets/front/css/fancybox.css" rel="preload" as="style">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <meta name="robots" content="noindex, nofollow">
+    <style type="text/css">
+    .site-main {
+        position: relative;
+        padding: 20px;
+        min-height: 200vh;
+        z-index: 100;
+    }
+    #scroll_typed {
+      font-size: 24px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      overflow: hidden;
+    }
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+    .text-container {
+      display: flex;
+      font-size: 60px;
+      font-family: 'Conthrax Rg';
+      color: #000000;
+      margin-left: -50px;
+    }
+    .letter {
+      opacity: 0;
+      transform: scale(3); /* Initially zoomed-in state */
+      animation: zoomOut 0.5s forwards;
+      animation-play-state: paused; /* Pause the animation initially */
+      animation-delay: calc(0.2s * var(--i)); /* Adds delay to each letter */
+    }
+    @keyframes zoomOut {
+      0% {
+        opacity: 0;
+        transform: scale(3);
+      }
+      50%{
+          opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes zoomOutss {
+      0% {
+        opacity: 0;
+        transform: scale(3);
+        display:none;
+      }
+      50%{
+          opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    .sletter
+    {
+        font-size:62px;
+    }
+    
+    .animate {
+      opacity: 1; /* Fully visible */
+      transform: scale(1); /* Final zoomed-out state */
+    }
+    .ml15 .alphabet {
+      display: inline-block;
+    }
+</style>
+
+</head>
+
+<body>
+<div id="cursor" class="Cursor"></div>
+    <!------------ HEADER-START ----------->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://queuetech.co/">
+                    <img class="lozad" src="https://queuetech.co/assets/front/img/logo.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://queuetech.co/about-us">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Products</a>
+                            <ul class="dropdown-menu">
+                                <li class="sub-dropdown"><a class="dropdown-item mb-4" href="https://queuetech.co/hardware">
+                                    <div class="dropdown-menu_text">
+                                        <span class="">Hardware</span>
+                                        <span class="menu_desc">Crowd control solutions</span>
+                                    </div>
+                                </a>
+                                <ul class="sub-dropdown-menu">
+                                    <li class=""><a class="dropdown-item mb-4" href="https://queuetech.co/product">
+                                        <div class="dropdown-menu_text">
+                                            <span class="p-0">Public Guidance</span>
+                                            <span class="menu_desc">Public Guidance is the art</span>
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item mb-4" href="https://queuetech.co/access-control">
+                                        <div class="dropdown-menu_text">
+                                            <span class="p-0">Access Control</span>
+                                            <span class="menu_desc">Access Control ensures safety</span>
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="dropdown-menu_text">
+                                            <span class="p-0">Accessories</span>
+                                            <span class="menu_desc">Crowd control solutions</span>
+                                        </div>
+                                    </a></li>
+                                </ul>
+                                </li>
+                                <li><a class="dropdown-item mb-4" href="https://queuetech.co/digital">
+                                    <div class="dropdown-menu_text">
+                                        <span>Digital Experience</span>
+                                        <span class="menu_desc">Infotainment, engagement, data</span>
+                                    </div>
+                                </a></li>
+                                <li><a class="dropdown-item mb-4" href="https://queuetech.co/customer-journey">
+                                    <div class="dropdown-menu_text">
+                                        <span>Customer Journey</span>
+                                        <span class="menu_desc">Communication, analytics, flow</span>
+                                    </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="https://queuetech.co/smart-environment">
+                                    <div class="dropdown-menu_text">
+                                        <span>Smart Environment</span>
+                                        <span class="menu_desc">Smart building technology</span>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://queuetech.co/contact-us">Contact</a>
+                        </li>
+                        <li class="nav-item new_btn">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Get In Touch</button>
+                        </li>
+                        <li class="nav-item new_btn">
+                            <button class="ml-3" type="button" onclick="window.location.href='https://queuetech.co/become-a-partner'" >Become a Partner</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------------ HEADER-END -----------><style>
+.new_row-content h3 {
+    font-size: 36px !important;
+}
+.advantages {
+    min-height: 252px;
+}
+.data_made-box .data_made-head h3 span.clr-white {
+    -webkit-text-fill-color: #ffffff;
+}
+</style>
+<title>QueueTech - Smart Environment</title>
+<link rel="icon" type="image/png" sizes="32x32" href="https://queuetech.co/assets/front/img/favicon.png">
+
+<!------------ PRODUCT-BANNER ------------>
+<section class="product_banner position-relative overflow-hidden" style="background-image: linear-gradient(45deg, rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),url(assets/front/img/se-banner.jpg);background-position: 100% 100%;">
+    <div class="pro_banner-content text-center wow animate__animated animate__slideInUp">
+        <h1 class="p-0 m-0">Your Environment is Already <br> <span class="gradient-span">Talking.</span> It’s Time to Listen!</h1>
+        <p class="pt-5">Too often businesses manage spaces like they manage people- waiting for <br> something to go wrong before they fix it! </p>
+    </div>
+</section>
+
+<!------------ COPY-SEC ------------>
+<section class="airport-pg-sec01 position-relative overflow-hidden bg-black">
+    <div class="container-fluid">
+        <div class="airport_main-text text-center">
+            <div class="welcome_text">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="animated-text alphabet-container ml15">
+                        <span style="font-size: 57px;" class="alphabet" style="--i:1;">Ordinary </span> 
+                        <span style="font-size: 57px;" class="alphabet gra" style="--i:2;">businesses react. </span>
+                        <span style="font-size: 57px;" class="alphabet" style="--i:3;">Smart businesses predict.</span>
+                    </div>
+                </div>
+                <p class="pt-5 pb-0 wow animate__animated animate__slideInUp">Our sensors and platform unlock the hidden intelligence of your space, giving you automated change management and <br> predictive real-time insights on energy, occupancy, air quality, customer movement, and more.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------- SECTION-ADDED ------------>
+<section class="smart_envi-sec03 position-relative overflow-hidden" style="background-image:url(assets/front/newsec.jpeg);">
+    <!--<div class="dashed_line"></div>-->
+    <div class="container-fluid">
+        <div class="dashboard_sec-text text-center">
+            <h2 class="m-0 clr-white p-0 wow animate__animated animate__slideInUp">Our full stack platform <br> simplifies implementation</h2>
+        </div>
+            <div style="padding-top:120px" class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="dt_sensor-box">
+                        <div class="dt_sensor">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/wireless-sensor.png">
+                        </div>
+                        <div class="dt_sensor-arrow">
+                            <img class="lozad arrow_img" src="https://queuetech.co/assets/front/img/se-icons/arrow.png">
+                        </div>
+                        <div class="dt_sensor-content">
+                            <h4 class="m-0 pt-0 pb-3 clr-white">Wireless Sensors</h4>
+                            <p class="clr-white m-0">Seamlessly collect data from buildings and assets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="dt_sensor-box">
+                        <div class="dt_sensor">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/cloud-connector.png">
+                        </div>
+                        <div class="dt_sensor-arrow">
+                            <img class="lozad arrow_img" src="https://queuetech.co/assets/front/img/se-icons/arrow.png">
+                        </div>
+                        <div class="dt_sensor-content">
+                            <h4 class="m-0 pt-0 pb-3 clr-white">Cloud Gateway</h4>
+                            <p class="clr-white m-0">Relay sensor data to the cloud. No IT network required.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="dt_sensor-box">
+                        <div class="dt_sensor">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/cloud-api.png">
+                        </div>
+                        <div class="dt_sensor-arrow">
+                            <img class="lozad arrow_img" src="https://queuetech.co/assets/front/img/se-icons/arrow.png">
+                        </div>
+                        <div class="dt_sensor-content">
+                            <h4 class="m-0 pt-0 pb-3 clr-white">Cloud / API</h4>
+                            <p class="clr-white m-0">Easily integrate any platform, sensor or application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="dt_sensor-box">
+                        <div class="dt_sensor">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/queue-tech-platform.png">
+                        </div>
+                        <div class="dt_sensor-content">
+                            <h4 class="m-0 pt-0 pb-3 clr-white">Queue Tech Platform</h4>
+                            <p class="clr-white m-0">Manage and analyze data and set up alerts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------- DATA-MADE-SIMPLE --------->
+<section class="smart_envi-sec02 position-relative overflow-hidden">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-9 col-md-9 col-sm-12">
+                <div class="data_made-box position-relative">
+                    <div class="data_made-img text-center">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/big-box-sensor.jpg">
+                    </div>
+                    <div class="data_made-head text-center">
+                        <h3 class="gradient-span"><span class="clr-white">1.</span>PEEL <span class="clr-white" style="margin-left:30px;">2.</span>STICK <span class="clr-white" style="margin-left:30px;">3.</span>CONNECT</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="data_made-images">
+                    <div class="procedure_box">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/peel.png">
+                    </div>
+                    <div class="procedure_box">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/stick.png">
+                    </div>
+                    <div class="procedure_box">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/smart-environment-5.png">
+                    </div>
+                </div>
+                <div class="right_marquee">
+                    <marquee direction="left" loop="">
+                        <span class="stroke_head">
+                            <span class="stroke_span">DATA MADE SIMPLE.</span>
+                            <span class=""> DATA MADE SIMPLE.</span>
+                            <span class="stroke_span"> DATA MADE SIMPLE.</span>
+                            <span class="">DATA MADE SIMPLE.</span>
+                            <span class="stroke_span">DATA MADE SIMPLE.</span>
+                            <span class=""> DATA MADE SIMPLE.</span>
+                            <span class="stroke_span"> DATA MADE SIMPLE.</span>
+                            <span class="">DATA MADE SIMPLE.</span>
+                        </span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---------- SIMPLER-SOLUTON-SEC ----------->
+
+<section class="smart_envi-sec-copy position-relative overflow-hidden" style="background-image:linear-gradient(45deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),url(assets/front/img/platform-bg.png);">
+    <div class="container-fluid">
+        <div class="rotate_lines-main">
+            <span class="r_line-dot"></span>
+            <span class="r_line r_line-1"></span>
+            <span class="r_line r_line-2"></span>
+            <span class="r_line r_line-3"></span>
+            <span class="r_line r_line-4"></span>
+            <span class="r_line r_line-5"></span>
+            <span class="r_line r_line-6"></span>
+        </div>
+        <div class="elemental_value-main">
+            <div class="elemental_value-box value_box-1">
+                <div class="elemental_value-head m-0">
+                    <h3 class="clr-white p-0 m-0">Cloud Gateway</h3>
+                </div>
+            </div>
+            <div class="elemental_value-box value_box-2">
+                <div class="part_one">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/air-quality.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="clr-white p-0 m-0">Air quality</h3>
+                    </div>
+                </div>
+                <div class="part_two d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/lighting.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Lighting</h3>
+                    </div>
+                </div>
+                <div class="part_three d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/air-temperature.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Air temperature</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="elemental_value-box value_box-3">
+                <div class="part_one">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/humidity.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="clr-white p-0 m-0">Humidity</h3>
+                    </div>
+                </div>
+                <div class="part_two d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/people-counting.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">People Counting</h3>
+                    </div>
+                </div>
+                <div class="part_three d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/heat-density.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">heat density hotspots</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="elemental_value-box value_box-4">
+                <div class="part_one">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/motion.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Motion</h3>
+                    </div>
+                </div>
+                <div class="part_two d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/refrigeration.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Refrigeration</h3>
+                    </div>
+                </div>
+                <div class="part_three d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/security.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Security</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="elemental_value-box value_box-5">
+                <div class="part_one">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/water-temprature.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Water temperature</h3>
+                    </div>
+                </div>
+                <div class="part_two d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/leakage.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Leakage</h3>
+                    </div>
+                </div>
+                <div class="part_three d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/legionaires-disease.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Legionaires disease detection</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="elemental_value-box value_box-6">
+                <div class="part_one">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/bms-control.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">BMS control</h3>
+                    </div>
+                </div>
+                <div class="part_two d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/door.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Door/Window opening</h3>
+                    </div>
+                </div>
+                <div class="part_three d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/air-conditioner.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Air Conditioning</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="elemental_value-box value_box-7">
+                <div class="part_one">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/hvac-control.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">HVAC control</h3>
+                    </div>
+                </div>
+                <div class="part_two d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/predictive.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">Predictive maintenance</h3>
+                    </div>
+                </div>
+                <div class="part_three d-none">
+                    <div class="elemental_value-img">
+                        <img class="lozad" src="https://queuetech.co/assets/front/img/d-circle.png">
+                        <img class="lozad circle_center" src="https://queuetech.co/assets/front/img/se-icons/co2-levels.png">
+                    </div>
+                    <div class="elemental_value-head">
+                        <h3 class="m-0 p-0 clr-white">CO2 levels</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------- HARDWARE-SEC-03 ----------->
+<section class="hardware-sec03 digital-sec-04 position-relative">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="boy_img position-relative">
+                    <img class="w-100 lozad" src="https://queuetech.co/assets/front/img/se-image.png">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="new_row-content">
+                    <h3 class="m-0 pb-0 clr-white" style="padding-left:40px">Five perception drivers for <br> customer journey success.</h3>
+                </div>
+                <div class="row">
+            		<div class="col-lg-6 col-md-6 col-sm-12">
+            		    <div class="effievciency_main">
+                            <div class="effievciency_content">
+                                <h3 class="clr-white"><span>1.</span> Control</h3>
+                                <p class="clr-white">Delivering clarity to wait times, self check in or real time updates can significantly improve experience metrics and brand perception.</p>
+                            </div>
+                        </div>
+            		</div>
+            		<div class="col-lg-6 col-md-6 col-sm-12">
+            		    <div class="effievciency_main">
+                            <div class="effievciency_content">
+                                <h3 class="clr-white"><span>2.</span> Transparency & Fairness</h3>
+                                <p class="clr-white">Everyone needs to feel valued. Fairness is critical to that feeling. Real time progress and justified prioritisation reduced anxiety and prevent conflict or brand damage.</p>
+                            </div>
+                        </div>
+            		</div>
+            		<div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="effievciency_main two_cd">
+                            <div class="effievciency_content">
+                                <h3 class="clr-white"><span>3.</span> Engagement</h3>
+                                <p class="clr-white">Your waiting customer is a captive audience. Providing entertainment, interactive content or product engagement (forms to be completed) makes time feel shorter. Digital engagement, notifications, AI driven optimisation.</p>
+                            </div>
+                        </div>
+            		</div>
+            		<div class="col-lg-6 col-md-6 col-sm-12">
+            		    <div class="effievciency_main">
+                            <div class="effievciency_content">
+                                <h3 class="clr-white"><span>4.</span> Physical Comfort</h3>
+                                <p class="clr-white">The environment in which we exist matters. Seating, lighting, temperature, noise and even access to refreshments can turn a frustration into a delight.</p>
+                            </div>
+                        </div>
+            		</div>
+            		<div class="col-lg-6 col-md-6 col-sm-12">
+            		    <div class="effievciency_main">
+                            <div class="effievciency_content">
+                                <h3 class="clr-white"><span>5.</span> Service</h3>
+                                <p class="clr-white">The last impression is the strongest impression. If the transition from waiting to transaction is smooth and engaged plus the service itself is excellent then any inconvenience along the way is forgotten.</p>
+                            </div>
+                        </div>
+            		</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------ COMPETITIVE-SEC-START ----------->
+<section class="queuetech_section-03 bg" style="background-image:linear-gradient(45deg, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)),  url(https://queuetech.co/assets/front/img/smart-env-bg01.png) ;">
+    <div class="py-5">
+        <div class="text-center ">
+            <div style="text-align: center;" class=" alphabet-container ml17" >
+                <span class="alphabet" style="--i: 1;">Choose</span>
+                <span class="alphabet" style="--i: 2;">Queue Tech</span>
+                <span class="alphabet" style="--i: 3;">for Your</span><br>
+                <span class="alphabet  gradient-span" style="--i: 6;"> Smart Building Technology</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+              <div class="advantage-slider stick-dots">
+                  <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/1.png">
+                        <h4 class="text-white">Sensor Agnostic, Fully Open</h4>
+                        <p>No proprietary lock-ins. Works with any sensor, any system, any infrastructure.</p>
+                    </div>
+                </div>
+                  <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/2.png">
+                        <h4 class="text-white">One Unified Platform</h4>
+                        <p>No more juggling multiple dashboards. Control, monitor, and analyze everything from energy use to occupancy flow in one place.</p>
+                    </div>
+                </div>
+                  <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/3.png">
+                        <h4 class="text-white">Seamless System Integration</h4>
+                        <p>Plug into your existing BMS, HVAC, lighting, security, or IoT ecosystem without expensive retrofits.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/4.png">
+                        <h4 class="text-white">Real-Time Intelligence, <br> Actionable Insights</h4>
+                        <p>Live analytics that actually mean something, helping you optimize energy, staffing, and space usage on the fly.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/5.png">
+                        <h4 class="text-white">Beyond Data</h4>
+                        <p>Direct Action – Not just reports and graphs. Automate responses based on sensor input—adjust lighting, HVAC, or even customer flows instantly.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/6.png">
+                        <h4 class="text-white">Opex, Not Just Capex</h4>
+                        <p>Flexible purchasing models mean you can integrate smart tech without massive upfront investment.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/7.png">
+                        <h4 class="text-white">Future-Proof Technology</h4>
+                        <p>Built to adapt, evolve, and integrate with tomorrow’s innovations as easily as today’s.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/8.png">
+                        <h4 class="text-white">From Hardware to <br> Digital Experiences</h4>
+                        <p>QueueTech isn’t just about monitoring; it’s about enhancing the customer experience while optimizing operations.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="advantages">
+                        <img class="fil-img" src="https://queuetech.co/assets/front/img/se-icons/9.png">
+                        <h4 class="text-white">Proven ROI from Day One</h4>
+                        <p>Cut costs, reduce inefficiencies, improve experiences. Every sensor, every system, every insight contributes directly to your bottom line.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------ COMPETITIVE-SEC-END ----------->
+
+<!------------ DIGITAL-MOBILE-SEC -------->
+<section class="digital-sec-05 position-relative bg-white">
+    <div class="container-fluid">
+        <div class="airport_main-text text-center pb-5">
+            <div class="welcome_text">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="animated-text alphabet-container ml15">
+                        <span style="font-size: 57px;" class="alphabet clr-black" style="--i:1;">Awesome</span>    
+                        <span style="font-size: 57px;" class="alphabet clr-black" style="--i:2;">Features</span>
+                    </div>
+                </div>
+                <p class="pt-2 pb-0 wow animate__animated animate__slideInUp clr-black">QueueTech doesn’t just collect data—it creates intelligent, responsive spaces that work for you.</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-4 col-sm-12 revealleft">
+                <div class="left_side-content mb-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="left_text text-end me-3">
+                            <h3 class="m-0 pt-0 pb-2 clr-black">Adaptive Intelligence</h3>
+                            <p class="m-0 clr-black"> Dynamically adjusts lighting, HVAC, and space allocation based on real-time occupancy and environmental data.</p>
+                        </div>
+                        <div class="left_icon text-end">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/adaptive-intelligence.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="left_side-content mb-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="left_text text-end me-3">
+                            <h3 class="m-0 pt-0 pb-2 clr-black">Predictive Automation</h3>
+                            <p class="m-0 clr-black">Uses AI to anticipate demand, optimizing energy usage, staffing, and resource allocation before issues arise.</p>
+                        </div>
+                        <div class="left_icon text-end">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/predictive-automation.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="left_side-content mb-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="left_text text-end me-3">
+                            <h3 class="m-0 pt-0 pb-2 clr-black">Seamless Integration</h3>
+                            <p class="m-0 clr-black">Sensor-agnostic and built on open protocols, ensuring smooth compatibility with any existing or future system.</p>
+                        </div>
+                        <div class="left_icon text-end">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/seamless-Integration.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="left_side-content">
+                    <div class="d-flex justify-content-between">
+                        <div class="left_text text-end me-3">
+                            <h3 class="m-0 pt-0 pb-2 clr-black">Real-Time Insights</h3>
+                            <p class="m-0 clr-black">Live data streams power instant decision-making for building efficiency, crowd flow, and operational improvements.</p>
+                        </div>
+                        <div class="left_icon text-end">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/real-time-Insights.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 reveal">
+                <div class="luxury_phone-img text-center" style="margin-top:-96px;">
+                    <img class="lozad" style="width:100% !important;" src="https://queuetech.co/assets/front/img/sensorrrrr-min.png">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 revealright">
+                <div class="left_side-content mb-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="left_icon">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/interactive-environments.png">
+                        </div>
+                        <div class="left_text text-left ms-3">
+                            <h3 class="m-0 pt-0 pb-2 clr-black">Interactive Environments</h3>
+                            <p class="m-0 clr-black">Transforms physical spaces into smart, responsive environments that react to movement, temperature, and customer needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_side-content mb-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="left_icon">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/energy-optimization.png">
+                        </div>
+                        <div class="left_text text-left ms-3">
+                            <h3 class="m-0 pt-0 pb-2 clr-black">Energy Optimization</h3>
+                            <p class="m-0 clr-black">AI-driven analytics reduce waste by intelligently managing power consumption across multiple systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_side-content mb-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="left_icon">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/engagement.png">
+                        </div>
+                        <div class="left_text text-left ms-3">
+                            <h3 class="m-0 pt-0 pb-2 clr-black">Touchless Engagement</h3>
+                            <p class="m-0 clr-black">Enables voice commands and mobile interactions for seamless control of services, navigation, and automation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_side-content">
+                    <div class="d-flex justify-content-between">
+                        <div class="left_icon">
+                            <img class="lozad" src="https://queuetech.co/assets/front/img/se-icons/actionable-analytics.png">
+                        </div>
+                        <div class="left_text text-left ms-3">
+                            <h3 class="m-0 pt-0 pb-2 clr-black">Actionable Analytics</h3>
+                            <p class="m-0 clr-black">Converts raw data into meaningful, easy-to-use insights that drive efficiency, safety, and customer experience improvements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!------------ CTA-SEC-START ----------->
+<section class="bg py-5" style="background-image:linear-gradient(45deg, rgb(0 0 0 / 65%), rgb(0 0 0 / 65%)), url(https://queuetech.co/assets/front/img/bgsd.png); height:512px;">
+  <div class="container-fluid py-5">
+    <div class="row py-5">
+      <div class="col-12 text-center reveal">
+        <h2 id="" class="text-white queuetech_h1 mb-4 typed2"></h2>
+        <p class="f-32 mb-4"><i>Create value thru physical and digital experiences!</i></p>
+        <div class="queuetech_btn-white me-4">
+          <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal" class=""><span>Lets Talk!</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------ DIGITAL-DASHBOARD-SEC -------->
+<section class="digital-sec-06 position-relative bg-white overflow-hidden">
+    <div class="container-fluid">
+        <div class="airport_main-text text-center pb-5">
+            <div class="welcome_text">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="animated-text alphabet-container ml15">
+                        <span style="font-size: 57px;" class="alphabet clr-black" style="--i:1;">One Platform,</span>    
+                        <span style="font-size: 57px;" class="alphabet clr-black" style="--i:2;">Three Superpowers!</span>
+                    </div>
+                </div>
+                <p class="pt-2 pb-0 wow animate__animated animate__slideInUp clr-black">Everything in One Place So You Can Get on with More Important Things! <br> One platform. One Login. One Frictionless Experience.</p>
+            </div>
+        </div>
+        <nav>
+			<div class="nav nav-tabs mb-3 justify-content-center border-0" id="nav-tab" role="tablist">
+				<button class="nav-link" id="nav-power01-tab" data-bs-toggle="tab" data-bs-target="#nav-power01" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Digital Experience</button>
+				<button class="nav-link mx-3" id="nav-power02-tab" data-bs-toggle="tab" data-bs-target="#nav-power02" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Customer Journey</button>
+				<button class="nav-link active" id="nav-power03-tab" data-bs-toggle="tab" data-bs-target="#nav-power03" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Smart Environment</button>
+			</div>
+		</nav>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade" id="nav-power01" role="tabpanel" aria-labelledby="nav-power01-tab">
+	            <div class="row align-items-center pt-10">
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="dashboard_sec-slider position-relative">
+                            <div class="temp_ipad-img">
+                                <img class="lozad w-100" src="https://queuetech.co/assets/front/img/Ipad-temp.png">
+                            </div>
+                            <div class="owl-carousel owl-theme dashboard_slider">
+                        <div class="items">
+                            <div class="dashboard_img">
+                                <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/1.png">
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="dashboard_img">
+                                <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/2.png">
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="dashboard_img">
+                                <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/3.png">
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="dashboard_img">
+                                <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/4.png">
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="dashboard_img">
+                                <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/5.png">
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="border_icons">
+                            <span class="border_black"></span>
+                            <div class="phone_small">
+                                <img class="lozad w-75" src="https://queuetech.co/assets/front/img/phone-luxury.png">
+                            </div>
+                            <div class="three_icons">
+                                <img class="lozad icon_top" src="https://queuetech.co/assets/front/img/menu-white.png">
+                                <img class="lozad icon_middle" src="https://queuetech.co/assets/front/img/hello.png">
+                                <img class="lozad icon_bottom" src="https://queuetech.co/assets/front/img/voucher-white.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 hide_padding" style="padding-left:50px;">
+                        <div class="dashboard_sec-text">
+                            <h2 class="m-0 clr-black p-0">A Digital Experience that <br> transforms Dead Time into <br> Prime Time</h2>
+                            <p class="m-0 pb-5 pt-5 clr-black">Historically businesses have seen waiting as a problem. Smart businesses see it as an opportunity.</p>
+                            <ul class="list-unstyled p-0 m-0">
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> A Branded Engagement moment (boredom = attention)</li>
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> A Revenue Stream (entertained customers spend more)</li>
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> A pychlogical hack (time feels shorter when distracted)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div class="tab-pane fade" id="nav-power02" role="tabpanel" aria-labelledby="nav-power02-tab">
+			    <div class="row align-items-center pt-10">
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="dashboard_sec-slider position-relative">
+                            <div class="temp_ipad-img">
+                                <img class="lozad w-100" src="https://queuetech.co/assets/front/img/Ipad-temp.png">
+                            </div>
+                            <div class="owl-carousel owl-theme dashboard_slider">
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/1.png">
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/2.png">
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/customer-journey-3.png">
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/customer-journey-4.png">
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/customer-journey-5.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border_icons">
+                            <span class="border_black"></span>
+                            <div class="phone_small">
+                                <img class="lozad w-75" src="https://queuetech.co/assets/front/img/phone-luxury.png">
+                            </div>
+                            <div class="three_icons">
+                                <img class="lozad icon_top" src="https://queuetech.co/assets/front/img/multi-white.png">
+                                <img class="lozad icon_add" src="https://queuetech.co/assets/front/img/hello.png">
+                                <img class="lozad icon_middle" src="https://queuetech.co/assets/front/img/call-white.png">
+                                <img class="lozad icon_bottom" src="https://queuetech.co/assets/front/img/people.png">
+                            </div>
+                            <div class="pod_small">
+                                <img class="lozad" src="https://queuetech.co/assets/front/img/pod-small.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 hide_padding" style="padding-left:30px;">
+                        <div class="dashboard_sec-text">
+                            <h2 class="m-0 clr-black p-0">Most “analytics” platforms are expensive reporting tools. They tell you whats already happened!</h2>
+                            <p class="m-0 pb-5 pt-5 clr-black">Our platform is an active problem-solver!</p>
+                            <ul class="list-unstyled p-0 m-0">
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> It tracks, predicts and optimises customer flow in real time.</li>
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> It shows you whats working (and whats breaking) before it becomes as issue.</li>
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> It recommends smarter layouts, better staffing levels and queue placements automatically.</li>
+                            </ul>
+                            <p class="m-0 pt-5 clr-black">Fixing a bad waiting experience after the fact is like closing the door after the horse has booked an Uber</p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div class="tab-pane fade active show" id="nav-power03" role="tabpanel" aria-labelledby="nav-power03-tab">
+			    <div class="row align-items-center pt-10">
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                        <div class="dashboard_sec-slider position-relative">
+                            <div class="temp_ipad-img">
+                                <img class="lozad w-100" src="https://queuetech.co/assets/front/img/Ipad-temp.png">
+                            </div>
+                            <div class="owl-carousel owl-theme dashboard_slider">
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/1.png">
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/2.png">
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/smart-environment-3.png">
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/smart-environment-4.png">
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <div class="dashboard_img">
+                                        <img class="lozad" src="https://queuetech.co/assets/front/img/digital-icons/smart-environment-5.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border_icons">
+                            <span class="border_black"></span>
+                            <div class="sensor_small">
+                                <img class="lozad" src="https://queuetech.co/assets/front/img/sensors-min.png">
+                            </div>
+                            <div class="phone_small">
+                                <img class="lozad w-50" src="https://queuetech.co/assets/front/img/phone-luxury.png">
+                            </div>
+                            <div class="three_icons">
+                                <img class="lozad icon_top" src="https://queuetech.co/assets/front/img/se-icons/real-time-white.png">
+                                <img class="lozad icon_middle" src="https://queuetech.co/assets/front/img/se-icons/seamless-white.png">
+                                <img class="lozad icon_bottom" src="https://queuetech.co/assets/front/img/se-icons/adaptive-white.png">
+                            </div>
+                            <div class="pod_small">
+                                <img class="lozad" src="https://queuetech.co/assets/front/img/Pod-side.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 hide_padding" style="padding-left:20px;">
+                        <div class="dashboard_sec-text">
+                            <h2 class="m-0 clr-black p-0">Most businesses are still micromanaging their own buildings like it’s 1999!</h2>
+                            <p class="m-0 pb-5 pt-5 clr-black">Our smart environment sensors turn your space into an autonomous genius.</p>
+                            <ul class="list-unstyled p-0 m-0">
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> Lighting adjusts itself to energy levels and foot traffic.</li>
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> HVAC doesn't waste energy on empty rooms.</li>
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> Desks, doors, and meeting spaces get optimised so nobody fights over resources.</li>
+                                <li class="ft-15"><i class="fa-regular fa-circle-check"></i> Predictive maintenance keeps bathrooms, equipment, services in operation before it breaks.</li>
+                            </ul>
+                            <p class="m-0 pt-5 clr-black">All delivered without the need for wires, expensive installations, or weekly “energy audits” that nobody reads.</p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".elemental_value-box").forEach(function(box) {
+        let parts = [
+            box.querySelector(".part_one"),
+            box.querySelector(".part_two"),
+            box.querySelector(".part_three")
+        ];
+        
+        let currentIndex = 0;
+        
+        setInterval(function() {
+            let nextIndex = (currentIndex + 1) % parts.length;
+            
+            if (parts[currentIndex] && parts[nextIndex]) {
+                parts[currentIndex].classList.add("d-none");
+                parts[nextIndex].classList.remove("d-none");
+                currentIndex = nextIndex;
+            }
+        }, 5000);
+    });
+});
+
+</script>    <!------------ FOOTER-START ----------->
+    <footer class="pt-5 pb-3">
+        <section class="py-5 footer01">
+            <div class="container-fluid pt-5">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-5 col-md-6 revealleft">
+                        <h1 class="queuetech_h1 "> <span class="gradient-span">Connect</span> with us</h1>
+                        <p>All your feedback and interactions are important. Please reach out to your local offices or
+                            partner.</p>
+                        <div class="mt-5">
+                            <ul class="list-unstyled locations">
+                                <li class="mb-4 ">
+                                    <p class="d-flex align-items-center "><i class="fa-solid fa-location-dot ic"></i>
+                                        <span><strong>United Kingdom</strong><br>20 Wenlock Road, London. N1 7GU, UK.
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li class="mb-4 ">
+                                    <p class="d-flex align-items-center "><i class="fa-solid fa-location-dot ic"></i>
+                                        <span><strong>France</strong><br>8 Rue De La Decouverte 77600. Chanteloup, Paris. France.</span>
+                                    </p>
+                                </li>
+
+                                <li class="mb-4 ">
+                                    <p class="d-flex align-items-center "><i class="fa-solid fa-location-dot ic"></i>
+                                        <span><strong>Romania</strong><br>Strada Daniel Danielopolu 30-32, 014134
+                                            București, România. </span>
+                                    </p>
+                                </li>
+
+                                <li class="mb-4 ">
+                                    <p class="d-flex align-items-center "><i class="fa-solid fa-envelope ic"></i>
+                                        <span><strong>Email Address</strong><br>hello@queuetech.co</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="d-flex pt-4">
+                                <div class="queuetech_btn-white  text-center me-4">
+                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class=""> <span class="">Set up a call</span> </a>
+                                </div>
+                                <div class="queuetech_btn-white  text-center">
+                                    <a href="https://api.whatsapp.com/send?phone=+447950171256&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class=""> <span class=""> Live chat </span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-md-6 revealright">
+                        <h1 class="queuetech_h1 "> Get In Touch</h1>
+                        <p>Contact us today for a zero commitment<br> demonstration.</p>
+                        <form class="row mt-4 justify-content-end">
+                            <div class="form-group col-md-6 mb-4">
+                                <input class="form-control" placeholder="First Name *" type="text" name="fname"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6 mb-4">
+                                <input class="form-control" placeholder="Last Name *" type="text" name="lname" required>
+                            </div>
+                            <div class="form-group col-md-6 mb-4">
+                                <input class="form-control" placeholder="Email *" type="email" name="email" required>
+                            </div>
+                            <div class="form-group col-md-6 mb-4">
+                                <input class="form-control" placeholder="Phone Number*" type="phone" name="phone"
+                                    required>
+                            </div>
+                            <div class="form-group col-12 mb-4">
+                                <textarea class="form-control" placeholder="Write your queries here..." rows="5"
+                                    name="msg"></textarea>
+                            </div>
+                            <div class="form-group col-lg-3 col-md-5 col-5">
+                                <div class="new_btn ">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 border-bottom footer02">
+            <div class="container-fluid py-5 mt-5">
+                <div class="row justify-content-between mob-r">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <a href=""><img src="https://queuetech.co/assets/front/img/logo.png"></a>
+                        <p class="mt-4">Our journey with customer<br> experiences began…</p>
+                        <h1 class="queuetech_h1 mt-4 mb-0 p-0"> <span class="gradient-span">Since 1998</span></h1>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-12">
+                        <div class="footer_menu">
+                            <ul class="text-white list-unstyled">
+                                <li class="">
+                                    <a href="https://queuetech.co/about-us">About us</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/blogs">Blogs</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/contact-us">Contact</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/hardware">Hardware</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/product">Public guidance</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/access-control">Access control</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/">Accessories</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/digital">Digital Experience</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/smart-environment">Smart Environment</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/terms-and-conditions">Terms and conditions</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/privacy-policy">Privacy policy</a>
+                                </li>
+                                <li class="my-3">
+                                    <a href="https://queuetech.co/refund-policy">Refund policy</a>
+                                </li>
+                            </ul>    
+                        </div>
+                        <!--<h4 class="text-white mb-3">Useful Links</h4>-->
+                        
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                        <div class="social_media-wrap">
+                            <h4 class="text-white mb-3">Let’s Get Social</h4>
+                            <ul class="list-unstyled d-flex text-white">
+                                <li class="me-3">
+                                    <a href="">
+                                        <h4>
+                                             <a href="https://www.linkedin.com/company/queue-tech-official/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li class="me-3">
+                                    <a href="">
+                                        <h4>
+                                             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li class="me-3">
+                                    <a href="">
+                                        <h4>
+                                            <a href="https://www.instagram.com/queue_tech_official?igsh=MjNpdXhueWM4bm04&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                                        </h4>
+                                    </a>
+                                </li>
+                                <!--<li class="me-4">-->
+                                <!--    <a href="">-->
+                                <!--        <h4>-->
+                                <!--            <i class="fa-brands fa-youtube"></i>-->
+                                <!--        </h4>-->
+                                <!--    </a>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-3 copyright footer03 text-center">
+            <div class="container-fluid">
+                <p>© 2025 All Rights Reserved | Queue Tech</p>
+            </div>
+        </section>
+    </footer>
+    <!------------ FOOTER-END ----------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=+447950171256&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+<style>
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.my-float{
+	margin-top:16px;
+}
+</style>
+    
+    <!------------ FIRST-MODAL ----------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Get In Touch</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="popup_form">
+              <form class="row mt-4 justify-content-end">
+                <div class="form-group col-md-6 mb-4">
+                  <input class="form-control" placeholder="First Name *" type="text" name="fname" required>
+                </div>
+                <div class="form-group col-md-6 mb-4">
+                  <input class="form-control" placeholder="Last Name *" type="text" name="lname" required>
+                </div>
+                <div class="form-group col-md-6 mb-4">
+                  <input class="form-control" placeholder="Email *" type="email" name="email" required>
+                </div>
+                <div class="form-group col-md-6 mb-4">
+                  <input class="form-control" placeholder="Phone Number*" type="phone" name="phone" required>
+                </div>
+                <div class="form-group col-12 mb-4">
+                  <textarea class="form-control" placeholder="Write your queries here..." rows="5" name="msg"></textarea>
+                </div>
+                <div class="form-group col-lg-3 col-md-5 col-5">
+                  <div class="new_btn">
+                    <button type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<style>
+.custom-width {
+  max-width: 45%;
+  margin: 140px auto;/* Adjust the width as per your requirement */
+}
+.custom-width .modal-content {
+    padding: 0 0;
+    border:none;
+}
+.custom-width .modal-content .modal-header {
+    margin: 0;
+    padding: 0px !important;
+    border:none !important;
+}
+.custom-width .modal-content iframe{
+    border-radius: 28px;
+}
+</style>
+<!------------ SECOND-MODAL ----------->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" role="dialog">
+  <div class="modal-dialog custom-width"> <!-- Apply the custom class here -->
+    <div class="modal-content">
+      <div class="modal-header justify-content-end">
+        <!--<h1 class="modal-title fs-5" id="exampleModalLabel">Set up a call</h1>-->
+        <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">-->
+        <!--  <i class="fa-solid fa-xmark"></i>-->
+        <!--</button>-->
+      </div>
+      <div class="modal-body">
+        <!--<iframe src="https://calendly.com/explainermojo/30mincall" width="100%" height="700" frameborder="0"></iframe>-->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/hello-queuetech/30min" style="min-width:100%;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+      </div>
+    </div>
+  </div>
+</div>
+<!------------ THIRD-MODAL ----------->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" role="dialog">
+  <div class="modal-dialog"> <!-- Apply the custom class here -->
+    <div class="modal-content">
+      <div class="modal-header justify-content-between">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Request Call Back</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class="popup_form">
+              <form class="row mt-4 justify-content-end">
+                <div class="form-group col-md-12 mb-4">
+                  <input class="form-control" placeholder="First Name *" type="text" name="fname" required>
+                </div>
+                <div class="form-group col-md-12 mb-4">
+                  <input class="form-control" placeholder="Email *" type="email" name="email" required>
+                </div>
+                <div class="form-group col-md-12 mb-4">
+                  <input class="form-control" type="tel" id="phoneInput" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group col-lg-6 mb-4">
+                    <label for="standard">Pick A Time</label>
+                    <div class="time-container">
+                      <input type="time" id="standard" required onfocus="this.showPicker()">
+                      <span class="time-placeholder">HH:MM</span>
+                    </div>
+                </div>
+                <div class="form-group col-lg-6 mb-4">
+                    <label for="pickadate">Pick A Date</label>
+                    <input type="date" id="pickadate" name="pickadate">
+                </div>
+                <div class="form-group col-12 mb-4">
+                    <select id="timezone" name="timezone" class="custom-select">
+                        <option value="">Select Timezone</option>
+                        <option value="Pacific/Midway">(UTC-11:00) Midway Island</option>
+                        <option value="Pacific/Niue">(UTC-11:00) Niue</option>
+                        <option value="Pacific/Pago_Pago">(UTC-11:00) Pago Pago</option>
+                        <option value="Pacific/Honolulu">(UTC-10:00) Hawaii</option>
+                        <option value="Pacific/Rarotonga">(UTC-10:00) Rarotonga</option>
+                        <option value="Pacific/Tahiti">(UTC-10:00) Tahiti</option>
+                        <option value="Pacific/Marquesas">(UTC-09:30) Marquesas Islands</option>
+                        <option value="America/Anchorage">(UTC-09:00) Anchorage</option>
+                        <option value="Pacific/Gambier">(UTC-09:00) Gambier Islands</option>
+                        <option value="America/Los_Angeles">(UTC-08:00) Pacific Time (US & Canada)</option>
+                        <option value="America/Vancouver">(UTC-08:00) Vancouver</option>
+                        <option value="Pacific/Pitcairn">(UTC-08:00) Pitcairn Islands</option>
+                        <option value="America/Denver">(UTC-07:00) Mountain Time (US & Canada)</option>
+                        <option value="America/Phoenix">(UTC-07:00) Arizona</option>
+                        <option value="America/Chihuahua">(UTC-07:00) Chihuahua</option>
+                        <option value="America/Chicago">(UTC-06:00) Central Time (US & Canada)</option>
+                        <option value="America/Mexico_City">(UTC-06:00) Mexico City</option>
+                        <option value="America/Bogota">(UTC-05:00) Bogota</option>
+                        <option value="America/New_York">(UTC-05:00) Eastern Time (US & Canada)</option>
+                        <option value="America/Toronto">(UTC-05:00) Toronto</option>
+                        <option value="America/Caracas">(UTC-04:30) Caracas</option>
+                        <option value="America/Santiago">(UTC-04:00) Santiago</option>
+                        <option value="America/Halifax">(UTC-04:00) Atlantic Time (Canada)</option>
+                        <option value="America/Sao_Paulo">(UTC-03:00) Sao Paulo</option>
+                        <option value="Atlantic/South_Georgia">(UTC-02:00) South Georgia</option>
+                        <option value="Atlantic/Azores">(UTC-01:00) Azores</option>
+                        <option value="Europe/London">(UTC+00:00) London</option>
+                        <option value="Europe/Lisbon">(UTC+00:00) Lisbon</option>
+                        <option value="Africa/Casablanca">(UTC+00:00) Casablanca</option>
+                        <option value="Europe/Berlin">(UTC+01:00) Berlin</option>
+                        <option value="Europe/Paris">(UTC+01:00) Paris</option>
+                        <option value="Europe/Rome">(UTC+01:00) Rome</option>
+                        <option value="Africa/Lagos">(UTC+01:00) Lagos</option>
+                        <option value="Europe/Moscow">(UTC+03:00) Moscow</option>
+                        <option value="Asia/Dubai">(UTC+04:00) Dubai</option>
+                        <option value="Asia/Tehran">(UTC+03:30) Tehran</option>
+                        <option value="Asia/Karachi">(UTC+05:00) Karachi</option>
+                        <option value="Asia/Kolkata">(UTC+05:30) India Standard Time</option>
+                        <option value="Asia/Kathmandu">(UTC+05:45) Kathmandu</option>
+                        <option value="Asia/Dhaka">(UTC+06:00) Dhaka</option>
+                        <option value="Asia/Yangon">(UTC+06:30) Yangon</option>
+                        <option value="Asia/Bangkok">(UTC+07:00) Bangkok</option>
+                        <option value="Asia/Hong_Kong">(UTC+08:00) Hong Kong</option>
+                        <option value="Asia/Tokyo">(UTC+09:00) Tokyo</option>
+                        <option value="Asia/Seoul">(UTC+09:00) Seoul</option>
+                        <option value="Australia/Sydney">(UTC+10:00) Sydney</option>
+                        <option value="Pacific/Auckland">(UTC+12:00) Auckland</option>
+                        <option value="Pacific/Fiji">(UTC+12:00) Fiji</option>
+                        <option value="Pacific/Tongatapu">(UTC+13:00) Tonga</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-3 col-md-5 col-5">
+                  <div class="new_btn">
+                    <button type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------ FOURTH-MODAL ----------->
+<div class="modal fade" id="exampleModalfile" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Order Now</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="popup_form">
+              <form class="row mt-4 justify-content-end">
+                <div class="form-group col-md-6 mb-4">
+                  <input class="form-control" placeholder="First Name *" type="text" name="fname" required>
+                </div>
+                <div class="form-group col-md-6 mb-4">
+                  <input class="form-control" placeholder="Email *" type="email" name="email" required>
+                </div>
+                <div class="form-group col-md-12 mb-4">
+                   <input class="form-control phoneInput" type="tel" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group col-md-4 mb-4">
+                  <img class="lozad" src="https://queuetech.co//assets/front/img/upload-img.png">
+                </div>
+                <div class="form-group col-md-8 mb-4">
+                    <div class="file_desc">
+                        <p class="clr-white">Please click the button below to upload your logo or graphics file, along with any special details about how you would like your artwork printed on the webbing. Our team will ensure your custom design is produced to the highest standard.</p>
+                    </div>
+                  <div class="file_upload">
+                <input type="file" id="myfile" name="myfile">
+                <div class="upload_icon">
+                    <i class="fa-solid fa-file"></i>
+                    <span id="file-name">Choose File...</span>
+                </div>
+          </div>
+
+                </div>
+                 <div class="form-group col-12 mb-4">
+                  <textarea class="form-control" placeholder="Write your queries here..." rows="5" name="msg"></textarea>
+                </div>
+                
+              
+                <div style="border:1px solid white;border-radius: 21px;display:flex" class="col-12 mb-4">
+                    <div class="col-sm-6">
+                        <div style="color:#fff;padding:10px;" class="message_details"></div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div style="color:#fff;padding:10px;" class="message_details_left"></div>
+                    </div>
+                </div>
+               
+                
+                <div class="form-group col-lg-3 col-md-5 col-5">
+                  <div class="new_btn">
+                    <button type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!------------ JOIN-OUR-TEAM-MODAL ----------->
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://queuetech.co/assets/front/js/plugin.js"></script>
+    <script src="https://queuetech.co/assets/front/js/custom.js"></script>
+    <script src="https://queuetech.co/assets/front/js/slick.min.js"></script>
+    <script src="https://queuetech.co/assets/front/js/fancybox.min.js"></script>
+    <script src="https://queuetech.co/assets/front/js/owl.carousel.js"></script>
+    <script src="https://queuetech.co/assets/front/js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+        integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://queuetech.co/assets/front/gsap/gsap.min.js"></script>
+    <script type="text/javascript" src="https://queuetech.co/assets/front/gsap/ScrollToPlugin.min.js"></script>
+    <script type="text/javascript" src="https://queuetech.co/assets/front/gsap/ScrollTrigger.min.js"></script>
+    <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"></script>
+
+<script>
+     $('#Model-Type').on('change', function () {
+         let dependentSelect = document.getElementById("Body-Color");
+      
+            document.getElementById("hs_Base-Style").value = "";
+            for (let i = 0; i < dependentSelect.options.length; i++) {
+                dependentSelect.options[i].disabled = true;  // Sare options disable
+            }
+            $('.new_ac_iamge').css('background-image', 'url(http://queuetech.co/assets/front/ac/stanbase.png)');
+            $('.new_ac_iamge').css('background-size', 'cover');
+            $('.texttoshowac').html("");
+            $("#Body-Color,#Ac-Webbing-Width, #Ac-Webbing-Length, #Ac-Webbing-Color,#Fixing-Type").val(null);
+            $("#Body-Color option,#Ac-Webbing-Width option,#Ac-Webbing-Length option, #Ac-Webbing-Color option, #Fixing-Type option").prop("disabled", false);
+            
+    $.ajax({
+        type: 'POST',
+        url: 'https://queuetech.co/access_control/ac_post_changer',
+        data: { model_id: $(this).val() },
+        beforeSend: function () {
+            console.log("Submitting form...");
+        },
+        success: function (response) {
+            console.log(response);
+            setTimeout(function () { // Add a 0.5-second delay
+                var returndata = JSON.parse(response);
+                
+                // Extract available post_finish_id from response
+                var availableIds = returndata.map(item => item.ac_body_color_id);
+        
+                // Loop through each option and enable/disable accordingly
+                $("#Body-Color option").each(function () {
+                    var optionValue = $(this).val();
+                    
+                    if (optionValue !== "" && !availableIds.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+            }, 500); // 500ms = 0.5 seconds delay
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", status, error);
+        }
+    });
+});
+$('.configurator-field-ac').on('change', function () {
+    
+        var formData = $('#configurator-render-ac').serialize(); 
+        
+        $.ajax({
+            type: 'POST',
+            url: 'https://queuetech.co/get-media-ac',
+            data: formData,
+            beforeSend: function () {
+                console.log("Submitting form...");
+            },
+            success: function (response) {
+                var returndata = JSON.parse(response);
+             
+                var qtypro = $('.quantity_qty').val();
+                $('.new_ac_iamge').attr('src',returndata.product_image);
+                var productdetails = "";
+                 productdetails += "QT Number: " + returndata.product_qt + "<br>";
+                 productdetails += "RRP Price in Euro: €" + (parseFloat(returndata.product_price_euro) * parseFloat(qtypro)).toFixed(2) + "<br>";
+                 productdetails += "RRP Price in Pound: £" + (parseFloat(returndata.product_price_pound) * parseFloat(qtypro)).toFixed(2) + "<br>";
+                
+                $('.config_rater_ac').html(productdetails);
+                
+                
+                
+
+                var pstimg = returndata.post_image;
+                var webimg = returndata.webbing_image;
+                var baseimg = returndata.base_image;
+                var countweb = returndata.webbing_count;
+                
+                if(countweb == 1)
+                {
+                    
+                }
+                else if(countweb == 2)
+                {
+                    $('.bb').show();
+                }
+                else if(countweb == 3)
+                {
+                    $('.bb').show();
+                    $('.cc').show();
+                }
+
+                function updateImage(selector, newSrc) {
+                    if (newSrc) {
+                        var img = new Image();
+                        img.src = newSrc;
+                        img.onload = function () {
+                           
+                        };
+                        img.onerror = function () {
+                            console.warn("Image not found:", newSrc);
+                        };
+                    }
+                }
+                
+                if (returndata.product_size === "behind")
+                {
+                    
+                    $('.rommosasss').css('z-index', '0');
+                    $('.rommosasss').css('top', '47%');
+                   
+                }
+                else 
+                {
+                   
+                    $('.rommosasss').css('z-index', '10'); // Reset to default if not "behind"
+                    $('.rommosasss').css('top', '45%');
+                }
+                
+            
+                $('.standpart').attr('src', pstimg);
+                // $('.webwidthpart').attr('src', webimg);
+                // $('.webwidthpart').attr('src', webimg);
+
+                if (returndata.product_size === "large") {
+                     $('.clipparts').show();
+                     
+                } 
+               
+                else if (returndata.product_size === "custom") 
+                {
+                     $('.webwidthpart').attr('src', webimg);
+                     
+                } 
+                else{
+                     $('.clipparts').hide();
+                }
+                
+                        updateImage('.webwidthpart', webimg);
+                        updateImage('.standpart', pstimg);
+                        updateImage('.basepart', baseimg);
+
+
+               
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", status, error);
+            }
+        });
+    });
+    
+    
+    $('#Model-Type').on('change', function () {
+            
+           
+            $('.new_ac_iamge').css('background-image', 'url(http://queuetech.co/assets/front/ac/stanbase.png)');
+            $('.new_ac_iamge').css('background-size', 'cover');
+            $('.texttoshowac').html("");
+            $("#Body-Color,#Ac-Webbing-Width, #Ac-Webbing-Length, #Ac-Webbing-Color,#Fixing-Type").val("");
+            $("#Ac-Webbing-Width option,#Ac-Webbing-Length option, #Ac-Webbing-Color option, #Fixing-Type option").prop("disabled", false);
+
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    $('#Ac-Webbing-Length').on('change', function () {
+            var namedata = $(this).find("option:selected").text();
+            var firstOption = $(this).find("option:first").text(); 
+            
+            if (namedata !== firstOption) { 
+                var namedatahtmlac = "< " + namedata + " >";
+                $('.texttoshowac').html(namedatahtmlac);
+            } else {
+                $('.texttoshowac').html(""); 
+            }
+            
+                        
+                        // $.ajax({
+                        //     type: 'POST',
+                        //     url: 'https://queuetech.co/hs_product/webbing_line_changer',
+                        //     data: { 
+                        //         webbinglineid: $(this).val(),
+                        //         poststyleid : $('#hs_Post-Style').val()
+                                
+                        //         },
+                        //     beforeSend: function () {
+                        //         console.log("Submitting form...");
+                        //     },
+                        //     success: function (response) {
+                        //         var returndata = JSON.parse(response);
+                                
+                        //         // Extract available post_finish_id from response
+                        //         var availableIds = returndata.map(item => item.hs_webbing_line_id);
+                        
+                        //         // Loop through each option and enable/disable accordingly
+                        //         $("#hs_Webbing-Line option").each(function () {
+                        //             var optionValue = $(this).val();
+                                    
+                        //             if (optionValue !== "" && !availableIds.includes(optionValue)) {
+                        //                 $(this).prop("disabled", true);
+                        //             } else {
+                        //                 $(this).prop("disabled", false);
+                        //             }
+                        //         });
+                        //     },
+                        //     error: function (xhr, status, error) {
+                        //         console.error("AJAX Error:", status, error);
+                        //     }
+                        // });
+                    });
+    
+    
+    
+    $('.stylerconfigac').on('change', function () {
+        
+    $.ajax({
+        type: 'POST',
+        url: 'https://queuetech.co/access_control/fields_matcher_inventory',
+        data: { model_type_id: $(this).val() },
+        beforeSend: function () {
+            console.log("Submitting form...");
+        },
+        success: function (response) {
+            try {
+                var returndata = JSON.parse(response);
+                var wbla_ac = returndata.webbing_length; // Webbing length data
+                var wbwa_ac = returndata.webbing_width;  // Webbing width data
+
+                var availableIdslengthac = wbla_ac.map(item => parseInt(item.ac_webbing_length_id, 10));
+                var availableIdswidthac = wbwa_ac.map(item => parseInt(item.ac_webbing_width_id, 10));
+                
+                $("#Ac-Webbing-Length option").each(function () {
+                    var optionValue = parseInt($(this).val(), 10);
+                    if (optionValue && !availableIdslengthac.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+
+                $("#Ac-Webbing-Width option").each(function () {
+                    var optionValue = parseInt($(this).val(), 10);
+                    if (optionValue && !availableIdswidthac.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+
+            } catch (error) {
+                console.error("Error parsing JSON: ", error);
+                console.log("Raw Response: ", response);
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", status, error);
+        }
+    });
+});
+
+
+
+
+    
+    
+    //------------------------------------------------------Health and saftey ---------------------------------------------------------------------
+    
+    
+    
+    $(document).ready(function () {
+    $(".resetBtnHs").click(function () {
+        
+                $('.webwidthpartla').show();
+               $('.standpart').show();
+               $('.basepart').show();
+            //   $('.main_image').attr('src','http://queuetech.co/assets/ucback.jpeg');
+               $('.main_image').css('background-image', 'url(http://queuetech.co/assets/front/img/cbg-new2.png)');
+               
+  
+        $('.orderNowBtn').prop('disabled', true);
+            $('.bb').hide();
+            $('.cc').hide();
+            $('.showtotext').html("");
+            $('.webwidthpart').attr('src','http://queuetech.co/assets/front/img/d-line.png');
+            $('.standpart').attr('src','http://queuetech.co/assets/front/img/default-base.png');
+            $('.basepart').attr('src','http://queuetech.co/assets/front/img/d-base.png');
+            $("#configurator-render-hs")[0].reset(); 
+            setTimeout(function () {
+                $("select option").prop("disabled", false); // Sab options enable kar do
+            }, 10); // Chhota delay taake reset properly ho
+    });
+    
+    
+ 
+    $(".resetBtnAc").click(function () {
+        
+        $('.orderNowBtnac').prop('disabled', true);
+            $('.texttoshowac').html("");
+            $('.new_ac_iamge').attr('src','http://queuetech.co/assets/front/ac/stanbase.png');
+            $("#configurator-render-ac")[0].reset(); 
+            setTimeout(function () {
+                $("select option").prop("disabled", false); // Sab options enable kar do
+            }, 10); // Chhota delay taake reset properly ho
+    });
+    
+ 
+    $('#myfile').on('change', function () {
+        let fileName = $(this).val().split('\\').pop(); // Extract filename
+        if (fileName) {
+            $('#file-name').text(fileName); // Update button text with filename
+        } else {
+            $('#file-name').text("Choose File..."); // Reset if no file is chosen
+        }
+    });
+    
+    $('.webeinglines').on('change', function () {
+        const value = parseInt($(this).val());
+        $('.bb').toggle(value === 2 || value === 3);
+        $('.cc').toggle(value === 3);
+    });
+
+
+});
+
+
+  $(document).ready(function () {
+        $('.web_decider_hs').on('change', function () {
+        // var imgElement = $('.webwidthpart');
+        $.ajax({
+            type: 'POST',
+            url: 'https://queuetech.co/hs_product/webbing_widthcolor_changer',
+            data: { 
+                pststyle: $('#hs_Post-Style').val(),
+                wbcolor: $('#hs_Webbing-Color').val(),
+                wbwidth: $('#hs_Webbing-Width').val()
+                },
+            beforeSend: function () {
+                
+            },
+            success: function (response) {
+                
+                if(response == 0)
+                {
+                    
+                }
+                else if(response == 1)
+                {
+                    $('.webwidthpart').attr('src', 'http://queuetech.co/assets/front/img/d-line.png');
+                }
+                else{
+                    // var newImage = new Image();
+                    // newImage.src = response;
+        
+                    // newImage.onload = function () {
+                       
+                        $('.webwidthpart').attr('src', response); // Replace loader with actual image
+                    // };
+                }
+                
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", status, error);
+            }
+        });
+});
+
+$('.orderNowBtnac').on('click',function(){
+ 
+           var newdatatoshow_ac = "";
+           newdatatoshow_ac += "Model Type     : "+$('#Model-Type').find(':selected').text()+"<br>";
+           newdatatoshow_ac += "Body Color    : "+$('#Body-Color').find(':selected').text()+"<br>";
+           newdatatoshow_ac += "Webbing Width  : "+$('#Ac-Webbing-Width').find(':selected').text()+"<br>";
+           newdatatoshow_ac += "Webbing Length : "+$('#Ac-Webbing-Length').find(':selected').text()+"<br>";
+           newdatatoshow_ac += "Webbing Color  : "+$('#Ac-Webbing-Color').find(':selected').text()+"<br>";
+           newdatatoshow_ac += "Fixing Type     : "+$('#Fixing-Type').find(':selected').text()+"<br>";
+           newdatatoshow_ac += "Quantity       : "+$('.acqty').val()+"<br>";
+           
+           var newdatatoshowleftac = "<b>Product Details</b> <br>"+$('.config_rater_ac').html();
+           $('.message_details').html(newdatatoshow_ac);
+           $('.message_details_left').html(newdatatoshowleftac);
+           
+        });
+
+        $('.orderNowBtnHs').on('click',function(){
+           var newdatatoshow_hs = "";
+           newdatatoshow_hs += "Post Style     : "+$('#hs_Post-Style').find(':selected').text()+"<br>";
+           newdatatoshow_hs += "Post Finish    : "+$('#hs_Post-Finish').find(':selected').text()+"<br>";
+           newdatatoshow_hs += "Webbing Width  : "+$('#hs_Webbing-Width').find(':selected').text()+"<br>";
+           newdatatoshow_hs += "Webbing Length : "+$('#hs_Webbing-Length').find(':selected').text()+"<br>";
+           newdatatoshow_hs += "Webbing Color  : "+$('#hs_Webbing-Color').find(':selected').text()+"<br>";
+           newdatatoshow_hs += "Webbing Line   : "+$('#hs_Webbing-Line').find(':selected').text()+"<br>";
+           newdatatoshow_hs += "Base Style     : "+$('#hs_Base-Style').find(':selected').text()+"<br>";
+           newdatatoshow_hs += "Quantity       : "+$('.quantity_qty').val()+"<br>";
+           
+           var newdatatoshowlefths = "<b>Product Details</b> <br>"+$('.config_rater_hs').html();
+           $('.message_details').html(newdatatoshow_hs);
+           $('.message_details_left').html(newdatatoshowlefths);
+           
+        });
+        
+        $('#hs_Base-Style').on('change', function () {
+            $.ajax({
+                type: 'POST',
+                url: 'https://queuetech.co/hs_product/base_changer_changer',
+                data: { basestyleid: $(this).val() },
+                beforeSend: function () {
+                    console.log("Submitting form...");
+                },
+                success: function (response) {
+                   $('.basepart').attr('src',response);
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error:", status, error);
+                }
+            });
+        });
+        
+        $('.stylerconfighs').on('change', function () {
+          
+    $.ajax({
+        type: 'POST',
+        url: 'https://queuetech.co/hs_product/fields_matcher_inventory',
+        data: { post_style_id: $(this).val() },
+        beforeSend: function () {
+            console.log("Submitting form...");
+        },
+        success: function (response) {
+            try {
+                var returndata = JSON.parse(response);
+                var wbla = returndata.webbing_length; // Webbing length data
+                var wbwa = returndata.webbing_width;  // Webbing width data
+                var wbls = returndata.webbing_lines;  // Webbing lines data
+
+                var availableIdslength = wbla.map(item => parseInt(item.hs_webbing_length_id, 10));
+                var availableIdswidth = wbwa.map(item => parseInt(item.hs_webbing_width_id, 10));
+                var availableIdslines = wbls.map(item => parseInt(item.hs_webbing_line_id, 10));
+
+                $("#hs_Webbing-Length option").each(function () {
+                    var optionValue = parseInt($(this).val(), 10);
+                    if (optionValue && !availableIdslength.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+
+                $("#hs_Webbing-Width option").each(function () {
+                    var optionValue = parseInt($(this).val(), 10);
+                    if (optionValue && !availableIdswidth.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+
+                $("#hs_Webbing-Line option").each(function () {
+                    var optionValue = parseInt($(this).val(), 10);
+                    if (optionValue && !availableIdslines.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+
+            } catch (error) {
+                console.error("Error parsing JSON: ", error);
+                console.log("Raw Response: ", response);
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", status, error);
+        }
+    });
+});
+
+
+        
+        
+        $('#hs_Post-Style').on('change', function () {
+            
+           
+         let dependentSelect = document.getElementById("hs_Base-Style");
+
+    
+            
+            if($(this).val() == 63 || $(this).val() == 65)
+            {
+                document.getElementById("hs_Base-Style").value = "";
+                for (let i = 0; i < dependentSelect.options.length; i++) {
+                    dependentSelect.options[i].disabled = true;  // Sare options disable
+                }
+               $('.webwidthpartla').hide();
+               $('.standpart').hide();
+               $('.basepart').hide();
+            //   $('.main_image').attr('src','http://queuetech.co/assets/ucback.jpeg');
+               $('.main_image').css('background-image', 'url(http://queuetech.co/assets/ucback.jpg)');
+
+            }
+            else
+            {
+                 for (let i = 0; i < dependentSelect.options.length; i++) {
+                    dependentSelect.options[i].disabled = false; // Sare options enable
+                }
+                        setTimeout(function() {
+                          $('.webwidthpartla').show();
+                        }, 500);
+                        $('.standpart').show();
+                        $('.basepart').show();
+                        $('.main_image').css('background-image', 'url(http://queuetech.co/assets/front/img/cbg-new2.png)');
+            }
+            
+            $('.showtotext').html("");
+            $('.bb').hide();
+            $('.cc').hide();
+            $('.webwidthpart').attr('src','http://queuetech.co/assets/front/img/d-line.png');
+            // $('.standpart').attr('src','http://queuetech.co/assets/front/img/default-base.png');
+            
+             $("#hs_Webbing-Color,#hs_Webbing-Width, #hs_Webbing-Length, #hs_Webbing-Line,#hs_Post-Finish").val("");
+
+            $("#hs_Webbing-Color option,#hs_Webbing-Width option, #hs_Webbing-Length option, #hs_Webbing-Line option").prop("disabled", false);
+           
+            
+    $.ajax({
+        type: 'POST',
+        url: 'https://queuetech.co/hs_product/post_changer',
+        data: { post_style_id: $(this).val() },
+        beforeSend: function () {
+            console.log("Submitting form...");
+        },
+        success: function (response) {
+            console.log(response);
+            setTimeout(function () { // Add a 0.5-second delay
+                var returndata = JSON.parse(response);
+                
+                // Extract available post_finish_id from response
+                var availableIds = returndata.map(item => item.hs_post_finish_id);
+        
+                // Loop through each option and enable/disable accordingly
+                $("#hs_Post-Finish option").each(function () {
+                    var optionValue = $(this).val();
+                    
+                    if (optionValue !== "" && !availableIds.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+            }, 500); // 500ms = 0.5 seconds delay
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", status, error);
+        }
+    });
+});
+
+        
+        
+        $('#hs_Webbing-Width').on('change', function () {
+            $('.texttoshow').html("");
+            $("#hs_Webbing-Length").prop("selectedIndex", 0);
+            $("#hs_Webbing-Line").prop("selectedIndex", 0);
+            $('.bb').hide();
+            $('.cc').hide();
+            
+            $.ajax({
+                type: 'POST',
+                url: 'https://queuetech.co/hs_product/webbing_width_changer',
+                data: { 
+                    webbinglengthid: $(this).val(),
+                    poststyleid : $('#hs_Post-Style').val(),
+                },
+                beforeSend: function () {
+                    console.log("Submitting form...");
+                },
+                success: function (response) {
+                    var returndata = JSON.parse(response);
+                    
+                    // Extract available post_finish_id from response
+                    var availableIds = returndata.map(item => item.hs_webbing_length_id);
+            
+                    // Loop through each option and enable/disable accordingly
+                    $("#hs_Webbing-Length option").each(function () {
+                        var optionValue = $(this).val();
+                        
+                        if (optionValue !== "" && !availableIds.includes(optionValue)) {
+                            $(this).prop("disabled", true);
+                        } else {
+                            $(this).prop("disabled", false);
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error:", status, error);
+                }
+            });
+        });
+        
+        $('#hs_Webbing-Length').on('change', function () {
+            var namedata = $(this).find("option:selected").text();
+var firstOption = $(this).find("option:first").text(); 
+
+if (namedata !== firstOption) { 
+    var namedatahtml = "< " + namedata + " >";
+    $('.texttoshow').html(namedatahtml);
+} else {
+    $('.texttoshow').html(""); 
+}
+
+            
+            $.ajax({
+                type: 'POST',
+                url: 'https://queuetech.co/hs_product/webbing_line_changer',
+                data: { 
+                    webbinglineid: $(this).val(),
+                    poststyleid : $('#hs_Post-Style').val()
+                    
+                    },
+                beforeSend: function () {
+                    console.log("Submitting form...");
+                },
+                success: function (response) {
+                    var returndata = JSON.parse(response);
+                    
+                    // Extract available post_finish_id from response
+                    var availableIds = returndata.map(item => item.hs_webbing_line_id);
+            
+                    // Loop through each option and enable/disable accordingly
+                    $("#hs_Webbing-Line option").each(function () {
+                        var optionValue = $(this).val();
+                        
+                        if (optionValue !== "" && !availableIds.includes(optionValue)) {
+                            $(this).prop("disabled", true);
+                        } else {
+                            $(this).prop("disabled", false);
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error:", status, error);
+                }
+            });
+        });
+        
+      
+    function checkFields() {
+        
+        let allFilled = true;
+        // Check all required select fields
+        $('.hs_configurator-field-ac').each(function () {
+            if ($(this).is('select') && $(this).val() === '') {
+                allFilled = false;
+            }
+        });
+        // Check quantity field
+        let quantity = parseFloat($('.quantity_qty').val()) || 0;
+        if (quantity < 1) {
+            allFilled = false;
+        }
+        // Enable or disable the Order Now button
+        if (allFilled) {
+            $('.orderNowBtnHs').prop('disabled', false);
+        } else {
+            $('.orderNowBtnHs').prop('disabled', true);
+        }
+    }
+
+  
+    $('.hs_configurator-field-ac').on('change keyup blur', function () {
+        checkFields();
+    });
+
+   
+    checkFields();
+    
+    function checkFieldsac() {
+        let allFilledac = true;
+        // Check all required select fields
+        $('.configurator-field-ac').each(function () {
+            if ($(this).is('select') && $(this).val() === '') {
+                allFilledac = false;
+            }
+        });
+        // Check quantity field
+        let quantitys = parseFloat($('.ail_qty_ac').val()) || 0;
+        if (quantitys < 1) {
+            allFilledac = false;
+        }
+        // Enable or disable the Order Now button
+        if (allFilledac) {
+         
+            $('.orderNowBtnac').prop('disabled', false);
+        } else {
+            
+            $('.orderNowBtnac').prop('disabled', true);
+        }
+    }
+    
+    checkFieldsac();
+    $('.configurator-field-ac').on('change keyup blur', function () {
+        checkFieldsac();
+    });
+
+
+
+$('.plusone').click(function () {
+    var input = $(this).siblings('.quantity_qtys');
+    var currentValue = parseInt(input.val()) || 1;
+    if (currentValue < 100) {
+        input.val(currentValue + 1).trigger('change'); // increment
+    }
+});
+
+$('.minusone').click(function () {
+    var input = $(this).siblings('.quantity_qtys');
+    var currentValue = parseInt(input.val()) || 1;
+    if (currentValue > 1) {
+        input.val(currentValue - 1).trigger('change'); // decrement
+    }
+});
+        
+       
+    $('.plus').click(function () {
+        var input = $(this).siblings('.quantity_qty');
+        var currentValue = parseInt(input.val()) || 1;
+        if (currentValue < 100) {
+            input.val(currentValue).trigger('change'); // Manually trigger change event
+        }
+    });
+
+    $('.minus').click(function () {
+        var input = $(this).siblings('.quantity_qty');
+        var currentValue = parseInt(input.val()) || 1;
+        if (currentValue > 1) {
+            input.val(currentValue).trigger('change'); // Manually trigger change event
+        }
+    });
+
+    $('.hs_configurator-field-ac, .quantity_qty').on('change', function () {
+        var formData = $('#configurator-render-hs').serialize();
+        console.log(formData); // Debugging
+    });
+
+
+    
+    $('.hs_configurator-field-ac').on('change', function () {
+       
+        var formData = $('#configurator-render-hs').serialize(); 
+        
+
+        $.ajax({
+            type: 'POST',
+            url: 'https://queuetech.co/get-media-hs',
+            data: formData,
+            beforeSend: function () {
+                console.log("Submitting form...");
+            },
+            success: function (response) {
+         
+                var qtypro = $('.res_hs_ail').val();
+                var returndata = JSON.parse(response);
+                var hs_productdetails = "";
+                 hs_productdetails += "QT Number: " + returndata.product_qt + "<br>";
+                 hs_productdetails += "RRP Price in Euro: €" + (parseFloat(returndata.product_price_euro) * parseFloat(qtypro)).toFixed(2) + "<br>";
+                 hs_productdetails += "RRP Price in Pound: £" + (parseFloat(returndata.product_price_pound) * parseFloat(qtypro)).toFixed(2) + "<br>";
+                
+                $('.config_rater_hs').html(hs_productdetails);
+                
+                
+                
+
+                var pstimg = returndata.post_image;
+                var webimg = returndata.webbing_image;
+                var baseimg = returndata.base_image;
+                var countweb = returndata.webbing_count;
+                
+                if(countweb == 1)
+                {
+                    
+                }
+                else if(countweb == 2)
+                {
+                    $('.bb').show();
+                }
+                else if(countweb == 3)
+                {
+                    $('.bb').show();
+                    $('.cc').show();
+                }
+
+                function updateImage(selector, newSrc) {
+                    if (newSrc) {
+                        var img = new Image();
+                        img.src = newSrc;
+                        img.onload = function () {
+                           
+                        };
+                        img.onerror = function () {
+                            console.warn("Image not found:", newSrc);
+                        };
+                    }
+                }
+                
+                if (returndata.product_size === "behind")
+                {
+                    
+                    $('.rommosasss').css('z-index', '0');
+                    $('.rommosasss').css('top', '47%');
+                   
+                }
+                else 
+                {
+                   
+                    $('.rommosasss').css('z-index', '10'); // Reset to default if not "behind"
+                    $('.rommosasss').css('top', '45%');
+                }
+                
+                if($("#hs_Post-Style").val() == 63 || $("#hs_Post-Style").val() == 65)
+                {
+                   
+                  $('.main_image').css('background-image', 'url('+webimg+')');
+                }
+               
+                
+            
+                $('.standpart').attr('src', pstimg);
+                
+
+                if (returndata.product_size === "large") {
+                     $('.clipparts').show();
+                     
+                } 
+                
+                
+               
+                else if (returndata.product_size === "custom") 
+                {
+                     $('.webwidthpart').attr('src', webimg);
+                     
+                } 
+                else{
+                     $('.clipparts').hide();
+                }
+                
+                        updateImage('.webwidthpart', webimg);
+                        updateImage('.standpart', pstimg);
+                        updateImage('.basepart', baseimg);
+
+
+               
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", status, error);
+            }
+        });
+    });
+});
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
+<script>
+    
+    
+   
+    
+    $(document).ready(function () {
+        
+        
+        
+    $("#resetBtn").click(function () {
+        $('#orderNowBtn').prop('disabled', true);
+            $('.bb').hide();
+            $('.cc').hide();
+            $('.webwidthpart').attr('src','http://queuetech.co/assets/front/img/d-line.png');
+            $('.standpart').attr('src','http://queuetech.co/assets/front/img/default-base.png');
+            $('.basepart').attr('src','http://queuetech.co/assets/front/img/d-base.png');
+        $("#configurator-render")[0].reset(); // Form reset karo
+        setTimeout(function () {
+            $("select option").prop("disabled", false); // Sab options enable kar do
+        }, 10); // Chhota delay taake reset properly ho
+    });
+    
+ 
+    $('#myfile').on('change', function () {
+        let fileName = $(this).val().split('\\').pop(); // Extract filename
+        if (fileName) {
+            $('#file-name').text(fileName); // Update button text with filename
+        } else {
+            $('#file-name').text("Choose File..."); // Reset if no file is chosen
+        }
+    });
+    
+    $('.webeinglines').on('change', function () {
+        const value = parseInt($(this).val());
+        $('.bb').toggle(value === 2 || value === 3);
+        $('.cc').toggle(value === 3);
+    });
+
+
+});
+
+            
+            
+</script>
+<script type="text/javascript">
+
+
+    const ourVisionTimeline = gsap.timeline({
+        scrollTrigger: {
+            scrub: 1,
+            pin: true,
+            trigger: "#OurVision",
+            start: "top top",
+            end: "bottom 50%",
+        },
+    })
+
+    ourVisionTimeline.to("#ImageRevealJs", {
+        duration: 1.8,
+        x: "0%",
+        opacity: 1,
+        ease: "power2.out",
+    });
+    
+    ourVisionTimeline.to("#left_quote", {
+        duration: 2,
+        ease: "power1.inOut",
+        opacity: 1,
+        y: "5%",
+    });
+    
+    ourVisionTimeline.to("#ContentAnimateJs p", {
+        visibility: "visible",
+        duration: 2.1,
+        ease: "power1.inOut",
+        stagger: 0.05,
+        opacity: 1,
+    });
+    
+    ourVisionTimeline.to("#LinksJs", {
+        duration: 2.2,
+        ease: "power1.inOut",
+        opacity: 1,
+        y: "5%",
+    });
+    
+    
+    ourVisionTimeline.to("#right_quote", {
+        duration: 2.3,
+        ease: "power1.inOut",
+        opacity: 1,
+        y: "5%",
+    });
+</script>
+<script>
+    
+
+    $(document).ready(function () {
+        $('.web_decider').on('change', function () {
+        // var imgElement = $('.webwidthpart');
+        $.ajax({
+            type: 'POST',
+            url: 'https://queuetech.co/product/webbing_widthcolor_changer',
+            data: { 
+                pststyle: $('#Post-Style').val(),
+                wbcolor: $('#Webbing-Color').val(),
+                wbwidth: $('#Webbing-Width').val()
+                },
+            beforeSend: function () {
+                
+            },
+            success: function (response) {
+                
+                if(response == 0)
+                {
+                    
+                }
+                else if(response == 1)
+                {
+                    $('.webwidthpart').attr('src', 'http://queuetech.co/assets/front/img/d-line.png');
+                }
+                else{
+                    // var newImage = new Image();
+                    // newImage.src = response;
+        
+                    // newImage.onload = function () {
+                       
+                        $('.webwidthpart').attr('src', response); // Replace loader with actual image
+                    // };
+                }
+                
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", status, error);
+            }
+        });
+});
+
+
+
+    
+
+
+
+
+
+        $('#orderNowBtn').on('click',function(){
+           var newdatatoshow = "";
+           newdatatoshow += "Post Style     : "+$('#Post-Style').find(':selected').text()+"<br>";
+           newdatatoshow += "Post Finish    : "+$('#Post-Finish').find(':selected').text()+"<br>";
+           newdatatoshow += "Webbing Width  : "+$('#Webbing-Width').find(':selected').text()+"<br>";
+           newdatatoshow += "Webbing Length : "+$('#Webbing-Length').find(':selected').text()+"<br>";
+           newdatatoshow += "Webbing Color  : "+$('#Webbing-Color').find(':selected').text()+"<br>";
+           newdatatoshow += "Webbing Line   : "+$('#Webbing-Line').find(':selected').text()+"<br>";
+           newdatatoshow += "Base Style     : "+$('#Base-Style').find(':selected').text()+"<br>";
+           newdatatoshow += "Quantity       : "+$('.quantity_qty').val()+"<br>";
+           
+           var newdatatoshowleft = "<b>Product Details</b> <br>"+$('.config_rater').html();
+           
+           $('.message_details').html(newdatatoshow);
+           $('.message_details_left').html(newdatatoshowleft);
+           
+        });
+        
+        
+        
+        $('#Base-Style').on('change', function () {
+            $.ajax({
+                type: 'POST',
+                url: 'https://queuetech.co/product/base_changer_changer',
+                data: { basestyleid: $(this).val() },
+                beforeSend: function () {
+                    console.log("Submitting form...");
+                },
+                success: function (response) {
+                   $('.basepart').attr('src',response);
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error:", status, error);
+                }
+            });
+        });
+        
+        $('.stylerconfig').on('change', function () {
+    $.ajax({
+        type: 'POST',
+        url: 'https://queuetech.co/product/fields_matcher_inventory',
+        data: { post_style_id: $(this).val() },
+        beforeSend: function () {
+            console.log("Submitting form...");
+        },
+        success: function (response) {
+            try {
+                var returndata = JSON.parse(response);
+                var wbla = returndata.webbing_length; // Webbing length data
+                var wbwa = returndata.webbing_width;  // Webbing width data
+                var wbls = returndata.webbing_lines;  // Webbing lines data
+
+                var availableIdslength = wbla.map(item => parseInt(item.webbing_length_id, 10));
+                var availableIdswidth = wbwa.map(item => parseInt(item.webbing_width_id, 10));
+                var availableIdslines = wbls.map(item => parseInt(item.webbing_line_id, 10));
+
+                $("#Webbing-Length option").each(function () {
+                    var optionValue = parseInt($(this).val(), 10);
+                    if (optionValue && !availableIdslength.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+
+                $("#Webbing-Width option").each(function () {
+                    var optionValue = parseInt($(this).val(), 10);
+                    if (optionValue && !availableIdswidth.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+
+                $("#Webbing-Line option").each(function () {
+                    var optionValue = parseInt($(this).val(), 10);
+                    if (optionValue && !availableIdslines.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+
+            } catch (error) {
+                console.error("Error parsing JSON: ", error);
+                console.log("Raw Response: ", response);
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", status, error);
+        }
+    });
+});
+
+
+        
+        
+        $('#Post-Style').on('change', function () {
+            $('.texttoshow').html("");
+            $('.bb').hide();
+            $('.cc').hide();
+            $('.webwidthpart').attr('src','http://queuetech.co/assets/front/img/d-line.png');
+            
+             $("#Webbing-Color,#Webbing-Width, #Webbing-Length, #Webbing-Line").val("");
+
+    $("#Webbing-Color option,#Webbing-Width option, #Webbing-Length option, #Webbing-Line option").prop("disabled", false);
+           
+            
+    $.ajax({
+        type: 'POST',
+        url: 'https://queuetech.co/product/post_changer',
+        data: { post_style_id: $(this).val() },
+        beforeSend: function () {
+            console.log("Submitting form...");
+        },
+        success: function (response) {
+            setTimeout(function () { // Add a 0.5-second delay
+                var returndata = JSON.parse(response);
+                
+                // Extract available post_finish_id from response
+                var availableIds = returndata.map(item => item.post_finish_id);
+        
+                // Loop through each option and enable/disable accordingly
+                $("#Post-Finish option").each(function () {
+                    var optionValue = $(this).val();
+                    
+                    if (optionValue !== "" && !availableIds.includes(optionValue)) {
+                        $(this).prop("disabled", true);
+                    } else {
+                        $(this).prop("disabled", false);
+                    }
+                });
+            }, 500); // 500ms = 0.5 seconds delay
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", status, error);
+        }
+    });
+});
+
+        
+        
+        
+        $('#Webbing-Width').on('change', function () {
+            $('.texttoshow').html("");
+            $("#Webbing-Length").prop("selectedIndex", 0);
+            $("#Webbing-Line").prop("selectedIndex", 0);
+            $('.bb').hide();
+            $('.cc').hide();
+            
+            $.ajax({
+                type: 'POST',
+                url: 'https://queuetech.co/product/webbing_width_changer',
+                data: { 
+                    webbinglengthid: $(this).val(),
+                    poststyleid : $('#Post-Style').val(),
+                },
+                beforeSend: function () {
+                    console.log("Submitting form...");
+                },
+                success: function (response) {
+                    var returndata = JSON.parse(response);
+                    
+                    // Extract available post_finish_id from response
+                    var availableIds = returndata.map(item => item.webbing_length_id);
+            
+                    // Loop through each option and enable/disable accordingly
+                    $("#Webbing-Length option").each(function () {
+                        var optionValue = $(this).val();
+                        
+                        if (optionValue !== "" && !availableIds.includes(optionValue)) {
+                            $(this).prop("disabled", true);
+                        } else {
+                            $(this).prop("disabled", false);
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error:", status, error);
+                }
+            });
+        });
+        
+        $('#Webbing-Length').on('change', function () {
+            var namedata = $(this).find("option:selected").text();
+var firstOption = $(this).find("option:first").text(); // Get first option text
+
+if (namedata !== firstOption) { 
+    var namedatahtml = "< " + namedata + " >";
+    $('.texttoshow').html(namedatahtml);
+} else {
+    $('.texttoshow').html(""); // Hide text if first option is selected
+}
+
+            
+            $.ajax({
+                type: 'POST',
+                url: 'https://queuetech.co/product/webbing_line_changer',
+                data: { 
+                    webbinglineid: $(this).val(),
+                    poststyleid : $('#Post-Style').val()
+                    
+                    },
+                beforeSend: function () {
+                    console.log("Submitting form...");
+                },
+                success: function (response) {
+                    var returndata = JSON.parse(response);
+                    
+                    // Extract available post_finish_id from response
+                    var availableIds = returndata.map(item => item.webbing_line_id);
+            
+                    // Loop through each option and enable/disable accordingly
+                    $("#Webbing-Line option").each(function () {
+                        var optionValue = $(this).val();
+                        
+                        if (optionValue !== "" && !availableIds.includes(optionValue)) {
+                            $(this).prop("disabled", true);
+                        } else {
+                            $(this).prop("disabled", false);
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX Error:", status, error);
+                }
+            });
+        });
+        
+      
+    function checkFields() {
+        let allFilled = true;
+
+        // Check all required select fields
+        $('.configurator-field').each(function () {
+            if ($(this).is('select') && $(this).val() === '') {
+                allFilled = false;
+            }
+        });
+
+        // Check quantity field
+        let quantity = parseFloat($('.quantity_qty').val()) || 0;
+        if (quantity < 1) {
+            allFilled = false;
+        }
+
+        // Enable or disable the Order Now button
+        if (allFilled) {
+            $('#orderNowBtn').prop('disabled', false);
+        } else {
+            $('#orderNowBtn').prop('disabled', true);
+        }
+    }
+
+    // Trigger check on field change
+    $('.configurator-field').on('change keyup blur', function () {
+        checkFields();
+    });
+
+    // Initial check on page load
+    checkFields();
+
+
+    var QtyInput = (function () {
+	var $qtyInputs = $(".qty-input");
+
+	if (!$qtyInputs.length) {
+		return;
+	}
+
+	var $inputs = $qtyInputs.find(".product-qty");
+	var $countBtn = $qtyInputs.find(".qty-count");
+	var qtyMin = parseInt($inputs.attr("min"));
+	var qtyMax = parseInt($inputs.attr("max"));
+
+	$inputs.change(function () {
+		var $this = $(this);
+		var $minusBtn = $this.siblings(".qty-count--minus");
+		var $addBtn = $this.siblings(".qty-count--add");
+		var qty = parseInt($this.val());
+
+		if (isNaN(qty) || qty <= qtyMin) {
+			$this.val(qtyMin);
+			$minusBtn.attr("disabled", true);
+		} else {
+			$minusBtn.attr("disabled", false);
+			
+			if(qty >= qtyMax){
+				$this.val(qtyMax);
+				$addBtn.attr('disabled', true);
+			} else {
+				$this.val(qty);
+				$addBtn.attr('disabled', false);
+			}
+		}
+	});
+
+	$countBtn.click(function () {
+		var operator = this.dataset.action;
+		var $this = $(this);
+		var $input = $this.siblings(".product-qty");
+		var qty = parseInt($input.val());
+
+		if (operator == "add") {
+			qty += 1;
+			if (qty >= qtyMin + 1) {
+				$this.siblings(".qty-count--minus").attr("disabled", false);
+			}
+
+			if (qty >= qtyMax) {
+				$this.attr("disabled", true);
+			}
+		} else {
+			qty = qty <= qtyMin ? qtyMin : (qty -= 1);
+			
+			if (qty == qtyMin) {
+				$this.attr("disabled", true);
+			}
+
+			if (qty < qtyMax) {
+				$this.siblings(".qty-count--add").attr("disabled", false);
+			}
+		}
+
+		$input.val(qty);
+	});
+})();
+
+       
+    $('.plus').click(function () {
+        var input = $(this).siblings('.quantity_qty');
+        var currentValue = parseInt(input.val()) || 1;
+        if (currentValue < 100) {
+            input.val(currentValue).trigger('change'); // Manually trigger change event
+        }
+    });
+
+    $('.minus').click(function () {
+        var input = $(this).siblings('.quantity_qty');
+        var currentValue = parseInt(input.val()) || 1;
+        if (currentValue > 1) {
+            input.val(currentValue).trigger('change'); // Manually trigger change event
+        }
+    });
+
+    // $('.configurator-field, .quantity_qty').on('change', function () {
+    //     var formData = $('#configurator-render').serialize();
+    //     console.log(formData); // Debugging
+    // });
+
+
+    
+    
+    $('.configurator-field').on('change', function () {
+ 
+        var formData = $('#configurator-render').serialize(); 
+        
+
+        $.ajax({
+            type: 'POST',
+            url: 'https://queuetech.co/get-media',
+            data: formData,
+            beforeSend: function () {
+               
+            },
+            success: function (response) {
+                
+                var qtypro = $('.ail_qty').val();
+                
+                var returndata = JSON.parse(response);
+                
+              
+                var productdetails = "";
+                // productdetails += "Product Name: " + returndata.product_name + "<br>";
+                 productdetails += "QT Number: " + returndata.product_qt + "<br>";
+                 productdetails += "RRP Price in Euro: €" + (parseFloat(returndata.product_price_euro) * parseFloat(qtypro)).toFixed(2) + "<br>";
+                 productdetails += "RRP Price in Pound: £" + (parseFloat(returndata.product_price_pound) * parseFloat(qtypro)).toFixed(2) + "<br>";
+                
+                $('.config_rater').html(productdetails);
+                
+                
+                
+
+                var pstimg = returndata.post_image;
+                var webimg = returndata.webbing_image;
+                var baseimg = returndata.base_image;
+                var countweb = returndata.webbing_count;
+                
+                if(countweb == 1)
+                {
+                    
+                }
+                else if(countweb == 2)
+                {
+                    $('.bb').show();
+                }
+                else if(countweb == 3)
+                {
+                    $('.bb').show();
+                    $('.cc').show();
+                }
+
+                function updateImage(selector, newSrc) {
+                    if (newSrc) {
+                        var img = new Image();
+                        img.src = newSrc;
+                        img.onload = function () {
+                           
+                        };
+                        img.onerror = function () {
+                            console.warn("Image not found:", newSrc);
+                        };
+                    }
+                }
+                
+                if (returndata.product_size === "behind")
+                {
+                    
+                    $('.rommosasss').css('z-index', '0');
+                    $('.rommosasss').css('top', '47%');
+                   
+                }
+                else 
+                {
+                   
+                    $('.rommosasss').css('z-index', '10'); // Reset to default if not "behind"
+                    $('.rommosasss').css('top', '45%');
+                }
+                
+            
+                $('.standpart').attr('src', pstimg);
+                // $('.webwidthpart').attr('src', webimg);
+                // $('.webwidthpart').attr('src', webimg);
+
+                if (returndata.product_size === "large") {
+                     $('.clipparts').show();
+                     
+                } 
+               
+                else if (returndata.product_size === "custom") 
+                {
+                     $('.webwidthpart').attr('src', webimg);
+                     
+                } 
+                else{
+                     $('.clipparts').hide();
+                }
+                
+                        updateImage('.webwidthpart', webimg);
+                        updateImage('.standpart', pstimg);
+                        updateImage('.basepart', baseimg);
+
+
+               
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", status, error);
+            }
+        });
+    });
+});
+
+
+
+    
+    // $(document).ready(function(){
+    //     $('.mediaselector').on('change',function(){
+    //         var filed_value = $(this).val();
+    //         $.ajax({
+    //             url: "", 
+    //             type: "POST",
+    //             data: { filed_value: filed_value },
+    //             dataType: "json",
+    //             success: function(response) {
+    //                 console.log(response.category_name);
+    //                 if(response.category_name == "Post-finish") {
+    //                   var post_image = response.imagetoput;
+                       
+    //                   $('.standpart').attr('src',post_image);
+    //                 }
+    //                 if(response.category_name == "Webbing-width")
+    //                 {
+    //                     var web_width_image = response.imagetoput;
+    //                     $('.webwidthpart').attr('src',web_width_image);
+                        
+    //                 }
+    //                 if(response.category_name == "Webbing-line")
+    //                 {
+    //                     var webbingline_number = response.subcatvalue;
+    //                     if(webbingline_number == "Single")
+    //                     {
+    //                         $('.bb').hide();
+    //                         $('.cc').hide();
+    //                     }
+    //                     else if(webbingline_number == "Dual")
+    //                     {
+    //                         $('.bb').show();
+    //                         $('.cc').hide();
+    //                     }
+    //                     else if(webbingline_number == "Triple")
+    //                     {
+    //                         $('.bb').show();
+    //                         $('.cc').show();
+    //                     }
+    //                     // $('.webwidthpart').attr('src',web_width_image);
+                        
+    //                 }
+    //                 // if(response.status == "success") {
+    //                 //     resultContainer.html("<strong>Data Retrieved:</strong> " + JSON.stringify(response.data));
+    //                 // } else {
+    //                 //     resultContainer.html("<span style='color:red;'>No data found.</span>");
+    //                 // }
+    //             },
+    //             error: function() {
+    //                 // resultContainer.html("<span style='color:red;'>An error occurred.</span>");
+    //             }
+    //         });
+    //     });
+    // });
+    
+</script>
+<script>
+    new WOW().init();
+    $(document).ready(function() {
+      // Function to check if an element is in the viewport
+      function isInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth));
+      }
+    
+       // Function to trigger animation for elements
+      function triggerAnimation(elementSelector) {
+        var element = $(elementSelector);
+    
+        // Loop through each 'alphabet' inside the element
+        element.find('.alphabet').each(function(index) {
+          var $this = $(this);
+    
+          // If the element is in the viewport and does not have the 'animate' class, trigger the animation
+          if (isInViewport($this[0]) && !$this.hasClass('animate')) {
+            var delay = 0.5 * index; // Delay based on index
+            $this.css('transition-delay', delay + 's'); // Apply delay dynamically
+            $this.addClass('animate'); // Add class to trigger animation
+          }
+          
+          // If the element is not in the viewport, remove the 'animate' class to reset the animation
+          else if (!isInViewport($this[0]) && $this.hasClass('animate')) {
+            $this.removeClass('animate');
+          }
+        });
+      }
+    
+    //   // Initial check for all elements on page load
+    //   triggerAnimation('.animated-text');
+    //   triggerAnimation('.animated-text-suited');
+    //   triggerAnimation('.animated-text-comp');
+    
+    //   // Trigger animation on scroll for all elements
+    //   $(window).on('scroll', function() {
+    //     triggerAnimation('.animated-text');
+    //     triggerAnimation('.animated-text-suited');
+    //     triggerAnimation('.animated-text-comp');
+    //   });
+    });
+
+    $(document).ready(function() {
+      // Variable to track if the animation has been triggered
+      var hasAnimationTriggered = false;
+    
+      // Function to check if element is in view
+      function isElementInView(el) {
+        var rect = el[0].getBoundingClientRect();
+        return rect.top <= $(window).height() && rect.bottom >= 0;
+      }
+      // Function to trigger and reset animation
+      function triggerAnimation() {
+        var element = $('#ssanimated-text');
+        // Check if the element is in the viewport and animation hasn't been triggered yet
+        if (isElementInView(element) && !hasAnimationTriggered) {
+          // If the element is in the viewport and the animation hasn't been triggered yet
+          element.removeClass('animate__animated animate__lightSpeedInLeft'); // Remove animation classes
+          void element[0].offsetWidth; // Trigger reflow to reset animation
+          element.addClass('animate__animated animate__lightSpeedInLeft'); // Reapply animation classes
+    
+          // Set the flag to true so it doesn't trigger again until the element leaves the viewport
+          hasAnimationTriggered = true;
+        }
+        // Reset the animation trigger when the element is out of the viewport
+        else if (!isElementInView(element)) {
+          hasAnimationTriggered = false; // Reset the flag when the element is out of the viewport
+        }
+      }
+      // Trigger animation on page load if the element is in view
+      triggerAnimation();
+      // Trigger animation on scroll (only if the animation has not been triggered)
+      $(window).on('scroll', function() {
+        triggerAnimation();
+      });
+    });
+    
+    $(document).ready(function() {
+      // Variable to track if the animation has been triggered
+      var hasAnimationTriggered = false;
+    
+      // Function to check if element is in view
+      function isElementInView(el) {
+        var rect = el[0].getBoundingClientRect();
+        return rect.top <= $(window).height() && rect.bottom >= 0;
+      }
+      // Function to trigger and reset animation
+      function triggerAnimation() {
+        var element = $('#vinsionss');
+        // Check if the element is in the viewport and animation hasn't been triggered yet
+        if (isElementInView(element) && !hasAnimationTriggered) {
+          // If the element is in the viewport and the animation hasn't been triggered yet
+          element.removeClass('animate__animated animate__lightSpeedInLeft'); // Remove animation classes
+          void element[0].offsetWidth; // Trigger reflow to reset animation
+          element.addClass('animate__animated animate__lightSpeedInLeft'); // Reapply animation classes
+    
+          // Set the flag to true so it doesn't trigger again until the element leaves the viewport
+          hasAnimationTriggered = true;
+        }
+        // Reset the animation trigger when the element is out of the viewport
+        else if (!isElementInView(element)) {
+          hasAnimationTriggered = false; // Reset the flag when the element is out of the viewport
+        }
+      }
+      // Trigger animation on page load if the element is in view
+      triggerAnimation();
+      // Trigger animation on scroll (only if the animation has not been triggered)
+      $(window).on('scroll', function() {
+        triggerAnimation();
+      });
+    });
+
+    $(document).ready(function() {
+      // Variable to track if the animation has been triggered
+      var hasAnimationTriggered = false;
+    
+      // Function to check if element is in view
+      function isElementInView(el) {
+        var rect = el[0].getBoundingClientRect();
+        return rect.top <= $(window).height() && rect.bottom >= 0;
+      }
+      // Function to trigger and reset animation
+      function triggerAnimation() {
+        var element = $('#questionos');
+        // Check if the element is in the viewport and animation hasn't been triggered yet
+        if (isElementInView(element) && !hasAnimationTriggered) {
+          // If the element is in the viewport and the animation hasn't been triggered yet
+          element.removeClass('animate__animated animate__lightSpeedInLeft'); // Remove animation classes
+          void element[0].offsetWidth; // Trigger reflow to reset animation
+          element.addClass('animate__animated animate__lightSpeedInLeft'); // Reapply animation classes
+    
+          // Set the flag to true so it doesn't trigger again until the element leaves the viewport
+          hasAnimationTriggered = true;
+        }
+        // Reset the animation trigger when the element is out of the viewport
+        else if (!isElementInView(element)) {
+          hasAnimationTriggered = false; // Reset the flag when the element is out of the viewport
+        }
+      }
+      // Trigger animation on page load if the element is in view
+      triggerAnimation();
+      // Trigger animation on scroll (only if the animation has not been triggered)
+      $(window).on('scroll', function() {
+        triggerAnimation();
+      });
+    });
+
+
+    $(function() {
+      // Function to split text into individual span elements and apply hover animation
+      function applyTextAnimation(selector) {
+        var newText = '',
+            h1 = $(selector).text(),
+            len = h1.length;
+    
+        // Split the text into individual span elements
+        for (var i = 0; i < len; i++) {
+          newText += '<span>' + h1.charAt(i) + '</span>';
+        }
+        $(selector).html(newText);  
+    
+        // Apply hover animation only on each span inside the selected element
+        $(selector + ' span').on('mouseenter mouseleave', function(e) {
+          var span = $(this);
+    
+          if (e.type === 'mouseenter') {
+            // Animate font size to 50px when mouse enters the span
+            span.not(':animated').animate({ fontSize: '50px' });
+          } else if (e.type === 'mouseleave') {
+            // Animate font size back to original (62px) when mouse leaves the span
+            span.animate({ fontSize: '62px' });
+          }
+        });
+      }
+    
+      // Apply the function to the three elements
+      applyTextAnimation('.dastas');
+      applyTextAnimation('.vinsions');
+      applyTextAnimation('.quensons');
+      applyTextAnimation('.wtqt');
+    });
+    </script>
+    
+    
+<script>
+  let isElementInViewport = false; // Track whether the element is currently in the viewport
+
+  // Function to play the animation
+  function playAnimation() {
+    const element = document.querySelector('.ml15');
+    const alphabets = document.querySelectorAll('.ml15 .alphabet');
+
+    // Reset the text styles before starting the animation
+    alphabets.forEach(alphabet => {
+      alphabet.style.transform = "scale(14)";
+      alphabet.style.opacity = "0";
+    });
+    element.style.opacity = "1";
+
+    // Trigger the animation
+    anime.timeline({ loop: false })
+      .add({
+        targets: '.ml15 .alphabet',
+        scale: [14, 1],
+        opacity: [0, 1],
+        easing: "easeOutCirc",
+        duration: 800,
+        delay: (el, i) => 800 * i
+      });
+  }
+
+  // Check if element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+
+  // Scroll event listener
+  window.addEventListener('scroll', function () {
+    const element = document.querySelector('.ml15');
+
+    if (isInViewport(element)) {
+      // If the element is in the viewport and animation hasn't played yet
+      if (!isElementInViewport) {
+        isElementInViewport = true; // Mark as in viewport
+        playAnimation(); // Play the animation
+      }
+    } else {
+      // Reset the flag when the element leaves the viewport
+      isElementInViewport = false;
+    }
+  });
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var hasAnimationTriggered = false;
+    function isElementInView(el) {
+        var rect = el.getBoundingClientRect();
+        return rect.top <= window.innerHeight && rect.bottom >= 0;
+    }
+    function triggerAnimation() {
+        var element = document.getElementById('ssanimated-text');
+        if (isElementInView(element) && !hasAnimationTriggered) {
+            element.classList.remove('animate__animated', 'animate__lightSpeedInLeft');
+            void element.offsetWidth;
+            element.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+            hasAnimationTriggered = true;
+        }
+        else if (!isElementInView(element)) {
+            hasAnimationTriggered = false;
+        }
+    }
+    triggerAnimation();
+    window.addEventListener('scroll', function() {
+        triggerAnimation();
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var hasAnimationTriggered = false;
+    function isElementInView(el) {
+        var rect = el.getBoundingClientRect();
+        return rect.top <= window.innerHeight && rect.bottom >= 0;
+    }
+    function triggerAnimation() {
+        var element = document.getElementById('vinsionss');
+        if (isElementInView(element) && !hasAnimationTriggered) {
+            element.classList.remove('animate__animated', 'animate__lightSpeedInLeft');
+            void element.offsetWidth;
+            element.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+            hasAnimationTriggered = true;
+        }
+        else if (!isElementInView(element)) {
+            hasAnimationTriggered = false;
+        }
+    }
+    triggerAnimation();
+    window.addEventListener('scroll', function() {
+        triggerAnimation();
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var hasAnimationTriggered = false;
+    function isElementInView(el) {
+        var rect = el.getBoundingClientRect();
+        return rect.top <= window.innerHeight && rect.bottom >= 0;
+    }
+    function triggerAnimation() {
+        var element = document.getElementById('questionos');
+        if (isElementInView(element) && !hasAnimationTriggered) {
+            element.classList.remove('animate__animated', 'animate__lightSpeedInLeft');
+            void element.offsetWidth;
+            element.classList.add('animate__animated', 'animate__lightSpeedInLeft');
+            hasAnimationTriggered = true;
+        }
+        else if (!isElementInView(element)) {
+            hasAnimationTriggered = false;
+        }
+    }
+    triggerAnimation();
+    window.addEventListener('scroll', function() {
+        triggerAnimation();
+    });
+});
+</script>
+<script>
+  let isElementInViewport = false; // Track whether the element is currently in the viewport
+  // Function to play the animation
+  function playAnimation() {
+    const element = document.querySelector('.ml15');
+    const alphabets = document.querySelectorAll('.ml15 .alphabet');
+    // Reset the text styles before starting the animation
+    alphabets.forEach(alphabet => {
+      alphabet.style.transform = "scale(14)";
+      alphabet.style.opacity = "0";
+    });
+    element.style.opacity = "1";
+    // Trigger the animation
+    anime.timeline({ loop: false })
+      .add({
+        targets: '.ml15 .alphabet',
+        scale: [14, 1],
+        opacity: [0, 1],
+        easing: "easeOutCirc",
+        duration: 800,
+        delay: (el, i) => 800 * i
+      });
+  }
+  // Check if element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+  // Scroll event listener
+  window.addEventListener('scroll', function () {
+    const element = document.querySelector('.ml15');
+    if (isInViewport(element)) {
+      // If the element is in the viewport and animation hasn't played yet
+      if (!isElementInViewport) {
+        isElementInViewport = true; // Mark as in viewport
+        playAnimation(); // Play the animation
+      }
+    } else {
+      // Reset the flag when the element leaves the viewport
+      isElementInViewport = false;
+    }
+  });
+</script>
+<script>
+  let isElementInViewports = false; // Track whether the element is currently in the viewport
+// Function to play the animation
+function playAnimations() {
+  const element = document.querySelector('.ml16');
+  const alphabets = document.querySelectorAll('.ml16 .alphabet');
+  // Reset the text styles before starting the animation
+  alphabets.forEach(function(alphabet) {
+    alphabet.style.transform = "scale(14)";
+    alphabet.style.opacity = "0";
+  });
+  element.style.opacity = "1";
+  // Trigger the animation
+  anime.timeline({ loop: false })
+    .add({
+      targets: '.ml16 .alphabet',
+      scale: [14, 1],
+      opacity: [0, 1],
+      easing: "easeOutCirc",
+      duration: 800,
+      delay: function(el, i) {
+        return 800 * i;
+      }
+    });
+}
+// Check if element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top < window.innerHeight && rect.bottom > 0;
+}
+// Scroll event listener
+window.addEventListener('scroll', function() {
+  const element = document.querySelector('.ml16');
+  if (isInViewport(element)) {
+    // If the element is in the viewport and animation hasn't played yet
+    if (!isElementInViewports) {
+        isElementInViewports = true; // Mark as in viewport
+      playAnimations(); // Play the animation
+    }
+  } else {
+    // Reset the flag when the element leaves the viewport
+    isElementInViewports = false;
+  }
+});
+</script>
+<script>
+  let isElementInViewportss = false; // Track whether the element is currently in the viewport
+// Function to play the animation
+function playAnimationss() {
+  const element = document.querySelector('.ml17');
+  const alphabets = document.querySelectorAll('.ml17 .alphabet');
+  // Reset the text styles before starting the animation
+  alphabets.forEach(function(alphabet) {
+    alphabet.style.transform = "scale(14)";
+    alphabet.style.opacity = "0";
+  });
+  element.style.opacity = "1";
+  // Trigger the animation
+  anime.timeline({ loop: false })
+    .add({
+      targets: '.ml17 .alphabet',
+      scale: [14, 1],
+      opacity: [0, 1],
+      easing: "easeOutCirc",
+      duration: 800,
+      delay: function(el, i) {
+        return 800 * i;
+      }
+    });
+}
+// Check if element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top < window.innerHeight && rect.bottom > 0;
+}
+// Scroll event listener
+window.addEventListener('scroll', function() {
+  const element = document.querySelector('.ml17');
+  if (isInViewport(element)) {
+    // If the element is in the viewport and animation hasn't played yet
+    if (!isElementInViewportss) {
+        isElementInViewportss = true; // Mark as in viewport
+      playAnimationss(); // Play the animation
+    }
+  } else {
+    // Reset the flag when the element leaves the viewport
+    isElementInViewportss = false;
+  }
+});
+</script>
+<script>
+  let isElementInViewportsss = false; // Track whether the element is currently in the viewport
+// Function to play the animation
+function playAnimationsss() {
+  const element = document.querySelector('.ml18');
+  const alphabets = document.querySelectorAll('.ml18 .alphabet');
+  // Reset the text styles before starting the animation
+  alphabets.forEach(function(alphabet) {
+    alphabet.style.transform = "scale(14)";
+    alphabet.style.opacity = "0";
+  });
+  element.style.opacity = "1";
+  // Trigger the animation
+  anime.timeline({ loop: false })
+    .add({
+      targets: '.ml18 .alphabet',
+      scale: [14, 1],
+      opacity: [0, 1],
+      easing: "easeOutCirc",
+      duration: 800,
+      delay: function(el, i) {
+        return 800 * i;
+      }
+    });
+}
+// Check if element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top < window.innerHeight && rect.bottom > 0;
+}
+// Scroll event listener
+window.addEventListener('scroll', function() {
+  const element = document.querySelector('.ml18');
+  if (isInViewport(element)) {
+    // If the element is in the viewport and animation hasn't played yet
+    if (!isElementInViewportsss) {
+        isElementInViewportsss = true; // Mark as in viewport
+      playAnimationsss(); // Play the animation
+    }
+  } else {
+    // Reset the flag when the element leaves the viewport
+    isElementInViewportsss = false;
+  }
+});
+</script>
+<script>
+const phoneInput = document.querySelector("#phoneInput");
+
+  // Initialize intlTelInput
+  const iti = window.intlTelInput(phoneInput, {
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"
+  });
+
+  // Set initial country based on the user's location
+  iti.promise.then(() => {
+    const countryCode = iti.getSelectedCountryData().iso2;
+    iti.setCountry(countryCode);
+  });
+
+  // Listen for the country change event
+  phoneInput.addEventListener("countrychange", function() {
+    const countryCode = iti.getSelectedCountryData().iso2;
+    console.log("Selected country code:", countryCode);
+  });
+  
+  
+  class PhoneInputHandler {
+    constructor(inputSelector) {
+        this.phoneInputs = document.querySelectorAll(inputSelector);
+        this.init();
+    }
+
+    init() {
+        this.phoneInputs.forEach((input) => {
+            const iti = window.intlTelInput(input, {
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"
+            });
+
+            // Set initial country based on user's location
+            iti.promise.then(() => {
+                const countryCode = iti.getSelectedCountryData().iso2;
+                iti.setCountry(countryCode);
+            });
+
+            // Listen for the country change event
+            input.addEventListener("countrychange", function () {
+                const countryCode = iti.getSelectedCountryData().iso2;
+                console.log("Selected country code:", countryCode);
+            });
+        });
+    }
+}
+
+// Initialize for all inputs with class "phoneInput"
+const phoneHandler = new PhoneInputHandler(".phoneInput");
+
+
+$('.advantage-slider-2').slick({
+  autoplay: true,
+  autoplaySpeed: 7000, // Make the video stay for 8 seconds
+  speed: 800,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  lazyLoad: 'progressive',
+  arrows: true,
+  dots: false,
+  prevArrow: '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+  nextArrow: '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+}).slickAnimation();
+
+
+$('.slick-nav').on('click touch', function(e) {
+
+    e.preventDefault();
+
+    var arrow = $(this);
+
+    if(!arrow.hasClass('animate')) {
+        arrow.addClass('animate');
+        setTimeout(() => {
+            arrow.removeClass('animate');
+        }, 1600);
+    }
+
+});
+$('#slick1').slick({
+  rows:2,
+  autoplay: true,
+  autoplaySpeed: 7000, // Make the video stay for 8 seconds
+  speed: 800,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  lazyLoad: 'progressive',
+  arrows: true,
+  dots: false,
+  prevArrow: '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+  nextArrow: '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+$('#icons_slider').slick({
+  rows:2,
+  autoplay: true,
+  autoplaySpeed: 5000, // Make the video stay for 8 seconds
+  speed: 800,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  lazyLoad: 'progressive',
+  arrows: true,
+  dots: false,
+  prevArrow: '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+  nextArrow: '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+<script>
+(function () {
+  const quantityContainer = document.querySelector(".quantity");
+  const minusBtn = quantityContainer.querySelector(".minus");
+  const plusBtn = quantityContainer.querySelector(".plus");
+  const inputBox = quantityContainer.querySelector(".input-box");
+
+  updateButtonStates();
+
+  quantityContainer.addEventListener("click", handleButtonClick);
+  inputBox.addEventListener("input", handleQuantityChange);
+
+  function updateButtonStates() {
+    const value = parseInt(inputBox.value);
+    minusBtn.disabled = value <= 1;
+    plusBtn.disabled = value >= parseInt(inputBox.max);
+  }
+
+  function handleButtonClick(event) {
+    if (event.target.classList.contains("minus")) {
+      decreaseValue();
+    } else if (event.target.classList.contains("plus")) {
+      increaseValue();
+    }
+  }
+
+  function decreaseValue() {
+    let value = parseInt(inputBox.value);
+    value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+    inputBox.value = value;
+    updateButtonStates();
+    handleQuantityChange();
+  }
+
+  function increaseValue() {
+    let value = parseInt(inputBox.value);
+    value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+    inputBox.value = value;
+    updateButtonStates();
+    handleQuantityChange();
+  }
+
+  function handleQuantityChange() {
+    let value = parseInt(inputBox.value);
+    value = isNaN(value) ? 1 : value;
+
+    // Execute your code here based on the updated quantity value
+    console.log("Quantity changed:", value);
+  }
+})();
+</script>
+<script>
+var typed = new Typed('#typed3', {
+    strings: ["Brand","Value", "Partnerships" ,"Insights","Actions","Journey"],
+    typeSpeed: 80,         // Typing speed (40 ms delay between characters)
+    backSpeed: 10,         // Backspacing speed
+    backDelay: 2000,       // Pause for 3 seconds before backspacing (3000 ms)
+    loop: true,            // Enables looping
+    showCursor: false,     // Hides the cursor
+    cursorChar: "|"        // Character for cursor (if enabled)
+});
+</script>
+<script>
+$(document).ready(function () {
+      $('.increment-btn').click(function (e) {
+        e.preventDefault();
+
+        var inc_value = $(this).closest('.product_data').find('.qty-input').val();
+        var value = parseInt(inc_value, 10);
+        value = isNaN(value) ? 0 : value;
+        if (value < 10) {
+            value++;
+            $(this).closest('.product_data').find('.qty-input').val(value);
+        }
+    });
+
+    $('.decrement-btn').click(function (e) {
+        e.preventDefault();
+
+        var dec_value = $(this).closest('.product_data').find('.qty-input').val();
+        var value = parseInt(dec_value, 10);
+        value = isNaN(value) ? 0 : value;
+        if (value > 1) {
+            value--;
+            $(this).closest('.product_data').find('.qty-input').val(value);
+        }
+    });
+});
+</script>
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'sxb1plmcpnl487213'},{'dcenter':'sxb1'},{'cp_id':'10270447'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
