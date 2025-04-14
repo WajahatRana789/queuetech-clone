@@ -1432,3 +1432,16 @@ h6 {
 .simple-bullet-list.marker-white li::marker {
   color: #fff;
 }
+
+.advantages-container .advantages {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.advantages-container .advantages .advantage-heading {
+  position: relative;
+  height: 110px;
+  margin-bottom: 1rem;
+}
