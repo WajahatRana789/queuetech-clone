@@ -62,12 +62,14 @@ section.airport-pg-sec02.hardware-sec01 .solution_box-img.image-container {
 .border_icons .three_icons img.icon_bottom {
     bottom: 11.5%;
 }
+#nav-power01 .border_icons .three_icons img.icon_top,
 #nav-power02 .border_icons .three_icons img.icon_top {
     top: 40%;
 }
 .border_icons .three_icons img.icon_add {
     top: 39%;
 }
+#nav-power01 .border_icons .three_icons img.icon_bottom,
 #nav-power02 .border_icons .three_icons img.icon_bottom {
     bottom: 17%;
     left: 16%;
@@ -426,9 +428,11 @@ footer h4{
     height: 320px;
     top: 44%;
 }
+#nav-power01 .border_icons .three_icons img.icon_bottom,
 #nav-power02 .border_icons .three_icons img.icon_bottom {
     bottom: 22%;
 }
+#nav-power01 .border_icons .three_icons img.icon_top,
 #nav-power02 .border_icons .three_icons img.icon_top {
     width: 60px;
     top: 42%;
@@ -676,10 +680,12 @@ footer .gradient-span {
 .border_icons .pod_small img {
     width: 35%;
 }
+#nav-power01 .border_icons .phone_small,
 #nav-power02 .border_icons .phone_small {
     left: 6%;
     top: 38%;
 }
+#nav-power01 .border_icons .three_icons img.icon_top,
 #nav-power02 .border_icons .three_icons img.icon_top {
     width: 70px;
     top: 44%;
@@ -688,6 +694,7 @@ footer .gradient-span {
     top: 44%;
     width: 70px;
 }
+#nav-power01 .border_icons .three_icons img.icon_bottom,
 #nav-power02 .border_icons .three_icons img.icon_bottom {
     left: 15%;
     bottom: 22%;
@@ -1792,6 +1799,7 @@ section.digital-sec-03 .stroke_head .stroke_span {
 .border_icons .three_icons img {
     width: 82px;
 }
+#nav-power01 .border_icons .three_icons img.icon_bottom,
 #nav-power02 .border_icons .three_icons img.icon_bottom {
     left: 9%;
     width: 65px;
@@ -1973,13 +1981,16 @@ section.hardware-sec03 {
 .border_icons .pod_small img {
     width: 35%;
 }
+#nav-power01 .border_icons .phone_small img,
 #nav-power02 .border_icons .phone_small img {
     width: 100px !important;
 }
+#nav-power01 .border_icons .phone_small,
 #nav-power02 .border_icons .phone_small {
     left: 0%;
     top: 37%;
 }
+#nav-power01 .border_icons .three_icons img.icon_top,
 #nav-power02 .border_icons .three_icons img.icon_top {
     left: 12%;
     top: 41%;
@@ -2828,12 +2839,15 @@ section.digital-sec-03 {
 .border_icons .pod_small img {
     width: 30%;
 }
+#nav-power01 .border_icons .phone_small img,
 #nav-power02 .border_icons .phone_small img {
     width: 70px !important;
 }
+#nav-power01 .border_icons span.border_black,
 #nav-power02 .border_icons span.border_black {
     height: 270px;
 }
+#nav-power01 .border_icons .three_icons img.icon_top,
 #nav-power02 .border_icons .three_icons img.icon_top {
     top: 43%;
     width: 55px;
@@ -2843,6 +2857,7 @@ section.digital-sec-03 {
     width: 55px;
     left: 24%;
 }
+#nav-power01 .border_icons .three_icons img.icon_bottom,
 #nav-power02 .border_icons .three_icons img.icon_bottom {
     width: 55px;
     bottom: 18.5% !important;
@@ -3281,17 +3296,20 @@ section.digital-sec-01 {
 .dashboard_sec-text ul li {
     font-size: 15px !important;
 }
+#nav-power01 .border_icons span.border_black,
 #nav-power02 .border_icons span.border_black {
     height: 400px;
     top: 60%;
     width: 450px;
     left: 5%;
 }
+#nav-power01 .border_icons .three_icons img.icon_bottom,
 #nav-power02 .border_icons .three_icons img.icon_bottom {
     width: 90px;
     bottom: 7% !important;
     left: 11%;
 }
+#nav-power01 .border_icons .three_icons img.icon_middle,
 #nav-power02 .border_icons .three_icons img.icon_middle {
     top: 56%;
 }
@@ -3300,10 +3318,12 @@ section.digital-sec-01 {
     top: 56%;
     left: 33%;
 }
+#nav-power01 .border_icons .three_icons img.icon_top,
 #nav-power02 .border_icons .three_icons img.icon_top {
     width: 90px;
     top: 57%;
 }
+#nav-power01 .border_icons .phone_small,
 #nav-power02 .border_icons .phone_small {
     top: 56%;
 }
@@ -4007,17 +4027,20 @@ section.digital-sec-03 {
 .dashboard_sec-text ul li {
     font-size: 15px !important;
 }
+#nav-power01 .border_icons span.border_black,
 #nav-power02 .border_icons span.border_black {
     height: 300px;
     top: 68%;
     width: 370px;
     left: 7%;
 }
+#nav-power01 .border_icons .three_icons img.icon_bottom,
 #nav-power02 .border_icons .three_icons img.icon_bottom {
     width: 60px;
     bottom: 9.5% !important;
     left: 13%;
 }
+#nav-power01 .border_icons .three_icons img.icon_middle,
 #nav-power02 .border_icons .three_icons img.icon_middle {
     top: 65%;
     width: 70px;
@@ -4027,11 +4050,13 @@ section.digital-sec-03 {
     top: 65.5%;
     left: 41%;
 }
+#nav-power01 .border_icons .three_icons img.icon_top,
 #nav-power02 .border_icons .three_icons img.icon_top {
     width: 60px;
     top: 66%;
     left: 20%;
 }
+#nav-power01 .border_icons .phone_small,
 #nav-power02 .border_icons .phone_small {
     top: 63%;
 }
@@ -4711,17 +4736,20 @@ section.airport-pg-sec02.hardware-sec01 .solution_box-text p {
 .dashboard_sec-text ul li {
     font-size: 15px !important;
 }
+#nav-power01 .border_icons span.border_black,
 #nav-power02 .border_icons span.border_black {
     height: 200px;
     top: 76%;
     width: 260px;
     left: 7%;
 }
+#nav-power01 .border_icons .three_icons img.icon_bottom,
 #nav-power02 .border_icons .three_icons img.icon_bottom {
     width: 55px;
     bottom: 7% !important;
     left: 13%;
 }
+#nav-power01 .border_icons .three_icons img.icon_middle,
 #nav-power02 .border_icons .three_icons img.icon_middle {
     top: 74%;
     width: 60px;
@@ -4731,11 +4759,13 @@ section.airport-pg-sec02.hardware-sec01 .solution_box-text p {
     top: 74%;
     left: 41%;
 }
+#nav-power01 .border_icons .three_icons img.icon_top,
 #nav-power02 .border_icons .three_icons img.icon_top {
     width: 50px;
     top: 74.5%;
     left: 20%;
 }
+#nav-power01 .border_icons .phone_small,
 #nav-power02 .border_icons .phone_small {
     top: 72%;
 }
