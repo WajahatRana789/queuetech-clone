@@ -18,11 +18,6 @@ section.airport-pg-sec02.hardware-sec01 .solution_box-img.image-container {
     height: 157px !important;
     border-radius: 20px;
 }
-.dashboard_sec-slider .dashboard_slider,
-.dashboard_sec-slider .dashboard_slider2,
-.dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -419px;
-}
 #nav-power03 .border_icons .three_icons img.icon_middle {
     top: 35.2%;
 }
@@ -37,11 +32,6 @@ section.airport-pg-sec02.hardware-sec01 .solution_box-img.image-container {
 }
 .Products_sec-01 nav div#nav-tab {
     width: 100%;
-}
-.dashboard_sec-slider .dashboard_slider,
-.dashboard_sec-slider .dashboard_slider2,
-.dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -398px;
 }
 #nav-power03 .border_icons .three_icons img.icon_bottom {
     bottom: 17%;
@@ -102,11 +92,6 @@ section.airport-pg-sec02.hardware-sec01 .solution_box-img.image-container {
 }
 .Products_sec-01 .effect_dark-img img {
     width: 487px;
-}
-.dashboard_sec-slider .dashboard_slider,
-.dashboard_sec-slider .dashboard_slider2,
-.dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -375px;
 }
 section.digital-sec-03 {
     height: 1280px;
@@ -296,11 +281,8 @@ section.digital-sec-03 {
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
 .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -343px;
     padding: 0 17px;
-}
-.dashboard_sec-slider .dashboard_img {
-    height: 370px;
+    top: 60px;
 }
 .dashboard_sec-text h2 {
     font-size: 26px;
@@ -417,8 +399,10 @@ footer h4{
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
 .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -360px !important;
     padding: 0 16px !important;
+}
+.border_icons .sensor_small img {
+    width: 230px;
 }
 #nav-power03 .border_icons .three_icons img.icon_top {
     width: 60px;
@@ -440,7 +424,18 @@ footer h4{
 }
 .border_icons span.border_black {
     height: 320px;
-    top: 50%;
+    top: 44%;
+}
+#nav-power02 .border_icons .three_icons img.icon_bottom {
+    bottom: 22%;
+}
+#nav-power02 .border_icons .three_icons img.icon_top {
+    width: 60px;
+    top: 42%;
+}
+.border_icons .three_icons img.icon_add {
+    width: 60px;
+    top: 41%;
 }
 .border_icons .phone_small {
     top: 38%;
@@ -449,24 +444,25 @@ footer h4{
     width: 140px !important;
 }
 .border_icons .three_icons img.icon_top {
-    top: 47%;
+    top: 41%;
     width: 70px;
 }
 .border_icons .three_icons img.icon_middle {
     width: 60px;
-    top: 47%;
+    top: 41%;
 }
 .border_icons .three_icons img.icon_bottom {
     width: 70px;
-    bottom: 16%;
+    bottom: 20%;
 }
 }
-@media only screen and (max-width: 1377px) and (min-width: 1200px){
+@media (max-width: 1377px) and (min-width: 1200px){
 img#right_quote {
     right: 0;
 }
-.dashboard_sec-slider .dashboard_img {
-    height: 288px;
+.dashboard_sec-slider .dashboard_slider,
+.dashboard_sec-slider .dashboard_slider2,
+.dashboard_sec-slider .dashboard_slider3 {
 }
 .privacy_poicy-sec .privacy_para h3 {
     font-size: 22px;
@@ -567,15 +563,15 @@ img#right_quote {
 .dashboard_sec-text p {
     padding: 30px 0 !important;
 }
-.dashboard_sec-slider .dashboard_slider,
-.dashboard_sec-slider .dashboard_slider2,
-.dashboard_sec-slider .dashboard_slider3{
-    margin-top: -256px !important;
-    padding: 0 14px !important;
-}
+/*.dashboard_sec-slider .dashboard_slider,*/
+/*.dashboard_sec-slider .dashboard_slider2,*/
+/*.dashboard_sec-slider .dashboard_slider3{*/
+/*    margin-top: -256px !important;*/
+/*    padding: 0 14px !important;*/
+/*}*/
 .digital-sec-03-con .pod_info {
     top: 170px;
-    right: 11%;
+    right: 3%;
 }
 .digital-sec-03-con .pod_info ul li {
     font-size: 16px;
@@ -1096,20 +1092,21 @@ section.digital-sec-03 .stroke_head .stroke_span {
 }
 }
 @media only screen and (max-width:1280px){
-.dashboard_sec-slider .dashboard_img {
-    height: 310px;
-}
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
 .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -279px !important;
     padding: 0px 15px !important;
 }
 }
-@media only screen and (max-width: 1024px){
-.dashboard_sec-slider .dashboard_img {
-    height: 284px;
+@media only screen and (max-width:1200px){
+.dashboard_sec-slider .dashboard_slider,
+.dashboard_sec-slider .dashboard_slider2,
+.dashboard_sec-slider .dashboard_slider3 {
+    padding: 0 11px !important;
+    top: 56px;
 }
+}
+@media only screen and (max-width: 1024px){
 .changes_sec .solution_box .solution_box-text {
     padding: 15px !important;
     border-radius: 20px;
@@ -1737,7 +1734,7 @@ section.digital-sec-03 {
 .digital-sec-03-con .pod_info ul li {
     font-size: 16px;
     margin-right: -40px;
-    margin-bottom: 14px;
+    margin-bottom: 40px;
 }
 section.digital-sec-03 .stroke_head {
     top: -60px;
@@ -1745,8 +1742,8 @@ section.digital-sec-03 .stroke_head {
 }
 .digital-sec-03-con .pod_info {
     position: absolute;
-    top: 143px;
-    right: 12%;
+    top: 190px;
+    right: 8%;
 }
 .digital-sec-03-con .pod_info ul li:last-child span.bk_line {
     width: 50px;
@@ -1930,7 +1927,6 @@ section.hardware-sec03 {
     border-radius: 20px;
 }
 .dashboard_sec-slider .dashboard_slider, .dashboard_sec-slider .dashboard_slider2, .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -252px !important;
     padding: 0 12px !important;
 }
 #nav-power03 .border_icons span.border_black {
@@ -2097,10 +2093,9 @@ section.hardware-sec03 {
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
 .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -241px !important;
-}
-.dashboard_sec-slider .dashboard_img {
-    height: 273px;
+    margin-top: 0 !important;
+    position: absolute;
+    top: 56px;
 }
 .Products_sec-01 nav div#nav-tab {
     width: 100%;
@@ -2485,9 +2480,9 @@ section.digital-sec-03 .stroke_head .stroke_span {
     font-size: 60px;
 }
 .digital-sec-03-con .pod_info ul li {
-    margin-bottom: 4px;
-    font-size: 8px;
-    margin-right: 51px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-right: 0px;
 }
 .digital-sec-03-con .pod_info {
     top: 135px;
@@ -2782,14 +2777,15 @@ section.digital-sec-03 {
 }
 .dashboard_sec-slider .dashboard_img {
     border-radius: 0px;
-    height: 221px;
+    height: max-content;
 }
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
 .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -186px !important;
+    margin-top: 0 !important;
     padding: 0 11px !important;
-    border-radius: 12px;
+    position: absolute;
+    top: 54px;
 }
 .border_icons span.border_black {
     height: 220px;
@@ -3244,12 +3240,16 @@ section.digital-sec-01 {
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
 .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -364px !important;
-    padding: 0 18px !important;
+    margin-top: 0px !important;
+    padding: 0 12px !important;
+    position: absolute;
+    top: 54px;
 }
 .dashboard_sec-slider .dashboard_img {
-    border-radius: 5px;
-    height: 392px;
+    height: max-content;
+    border-bottom: 5px solid #0d1019;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .dashboard_sec-slider .dashboard_img img {
     border-radius: 5px;
@@ -3968,19 +3968,21 @@ section.digital-sec-03 {
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
 .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -226px !important;
+    margin-top: 0 !important;
     padding: 0px 13px !important;
+    position: absolute;
+    top: 57px;
 }
 .dashboard_sec-slider .dashboard_img {
     border-radius: 5px;
-    height: 259px;
+    height: max-content;
 }
 .dashboard_sec-slider .dashboard_img img {
     border-radius: 5px;
 }
 .border_icons .three_icons img.icon_bottom {
     width: 80px;
-    bottom: 5.5%;
+    bottom: 9.5%;
     left: 10%;
 }
 #nav-power01 .border_icons .phone_small img {
@@ -3992,7 +3994,7 @@ section.digital-sec-03 {
 .border_icons .three_icons img.icon_middle {
     width: 60px;
     top: 65.5%;
-    left: 69%;
+    left: 66%;
 }
 #nav-power01 .border_icons .three_icons img.icon_top {
     left: 21%;
@@ -4012,8 +4014,8 @@ section.digital-sec-03 {
     left: 7%;
 }
 #nav-power02 .border_icons .three_icons img.icon_bottom {
-    width: 70px;
-    bottom: 6.5% !important;
+    width: 60px;
+    bottom: 9.5% !important;
     left: 13%;
 }
 #nav-power02 .border_icons .three_icons img.icon_middle {
@@ -4021,8 +4023,8 @@ section.digital-sec-03 {
     width: 70px;
 }
 .border_icons .three_icons img.icon_add {
-    width: 70px;
-    top: 65%;
+    width: 60px;
+    top: 65.5%;
     left: 41%;
 }
 #nav-power02 .border_icons .three_icons img.icon_top {
@@ -4046,17 +4048,17 @@ section.digital-sec-03 {
     top: 64%;
 }
 #nav-power03 .border_icons .three_icons img.icon_bottom {
-    width: 70px;
-    bottom: 4%;
-    left: 11%;
+    width: 60px;
+    bottom: 7.5%;
+    left: 12%;
 }
 #nav-power03 .border_icons .three_icons img.icon_middle {
-    top: 67%;
+    top: 68%;
     width: 70px;
     left: 62%;
 }
 #nav-power03 .border_icons .three_icons img.icon_top {
-    top: 67%;
+    top: 67.5%;
     width: 70px;
     left: 31%;
 }
@@ -4202,13 +4204,6 @@ section.join_team-form label {
 }
 .hardware-sec03 .new_row-content h3 {
     font-size: 22px !important;
-}
-
-.dashboard_sec-slider .dashboard_slider,
-.dashboard_sec-slider .dashboard_slider2,
-.dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -247px !important;
-    padding: 0 11px !important;
 }
 .dashboard_sec-text p {
     font-size: 16px;
@@ -4677,12 +4672,14 @@ section.airport-pg-sec02.hardware-sec01 .solution_box-text p {
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
 .dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -166px !important;
+    margin-top: 0 !important;
     padding: 0px 10px !important;
+    position: absolute;
+    top: 54px;
 }
 .dashboard_sec-slider .dashboard_img {
     border-radius: 5px;
-    height: 201px;
+    height: max-content;
 }
 .dashboard_sec-slider .dashboard_img img {
     border-radius: 5px;
@@ -4827,8 +4824,8 @@ section.airport-pg-sec02.hardware-sec01 .solution_box-text p {
     padding-bottom: 13px;
 }
 .copy_sec-iconsss .new_row-content h3 {
-    font-size: 16px !important;
-    line-height: 3px;
+    font-size: 24px !important;
+    line-height: 33px;
 }
 .digital-sec-03-con .new_row-content {
     top: 30px;
@@ -4837,15 +4834,10 @@ section.digital-sec-03 {
     height: 330px;
 }
 .digital-sec-03-con .icons_with-text {
-    /* display: none; */
-    top: 188px;
-    left: 4%;
-    /* width: 41px; */
+    display: none;
 }
 .digital-sec-03-con .icons_with-text2 {
-    /* display: none; */
-    top: 131px;
-    right: 45% !important;
+    display: none;
 }
 .boy_img {
     height: 100%;
@@ -4868,13 +4860,10 @@ section.digital-sec-03 {
     height: 300px;
 }
 .digital-sec-03-con .pod_info {
-    /* display: none; */
-    top: 52px;
-    right: -48px;
+    display: none;
 }
 section.product_banner {
-   height: 322px;
-        margin-top: 106px;
+    height: 440px;
 }
 .hardware-sec01 .solution_box:hover .solution_box-text {
     margin-top: -140px;
@@ -5049,8 +5038,6 @@ section.join_team-form label {
 .breadcrumbs .breadcrumbs_content {
     padding-left: 15px;
 }
-.dashboard_sec-slider .dashboard_slider, .dashboard_sec-slider .dashboard_slider2, .dashboard_sec-slider .dashboard_slider3 {
-}
 .modal {
     z-index: 99999 !important;
 }
@@ -5141,18 +5128,14 @@ section.about_sec-03 h2 {
 .digital-sec-06 #nav-tab button:nth-child(3) {
     margin: 0;
 }
-
 .dashboard_sec-text h2 {
     font-size: 18px;
 }
 .dashboard_sec-slider .dashboard_slider,
 .dashboard_sec-slider .dashboard_slider2,
-.dashboard_sec-slider .dashboard_slider3 {
-    margin-top: -145px !important;
-    padding: 0 9px !important;
-}
+.dashboard_sec-slider .dashboard_slider3 {padding: 0px 7px !important;top: 52px;}
 .dashboard_sec-slider .dashboard_img {
-    height: 181px;
+    height: max-content;
 }
 .border_icons .three_icons img.icon_middle {
     left: 68%;
