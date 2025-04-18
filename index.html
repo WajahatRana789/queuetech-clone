@@ -245,6 +245,26 @@
         position: relative;
         bottom: 70px;
     }
+    .deck-images-container {
+        position: relative;
+    }
+    .deck-images-container .two-images {
+        position: relative;
+        display: flex;
+    }
+    .deck-images-container .two-images .two-col-img {
+        position: relative;
+        flex: 0 0 50%;
+        max-width: 50%;
+        object-fit: cover;
+        height: 800px;   
+    }
+    .deck-images-container .phone-with-charger {
+        position: relative;
+        height: 1180px;
+        width: 100%;
+        object-fit: cover;
+    }
 </style>
 
 <!------------ PRODUCT-BANNER ------------>
@@ -330,8 +350,14 @@ People don't wait for what they need; they wait for what they want. With QueueTe
     </div>
 </section>
 
-<section style="position: relative; width: 100%; height: 1180px;">
-    <img src="assets/front/img/Charger_Poolside3-min.png" alt="" style="height: 100%; width: 100%; object-fit: cover;">
+<section style="position: relative; width: 100%;">
+    <div class="deck-images-container">
+        <div class="two-images">
+            <img src="assets/front/img/Cafe_Tables-min.jpg" alt="img" class="cafe-table two-col-img">
+            <img src="assets/front/img/Store_Closeup-min.jpg" alt="img" class="store-closeup two-col-img">
+        </div>
+        <img src="assets/front/img/deck.png" alt="img" class="phone-with-charger">
+    </div>
 </section>
 
 <!---------- HARDWARE-SEC-03 ----------->
