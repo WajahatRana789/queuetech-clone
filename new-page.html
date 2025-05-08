@@ -274,10 +274,24 @@
     .advantage-slider .slick-nav.prev-arrow, .smart_envi-sec .slick-nav.prev-arrow {
         top: 100%;
     }
+
+    .banner-layer {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
 </style>
 
 <!------------ BANNER-START ----------->
-<section class="hardware-banner position-relative overflow-hidden" id="banner-container" style="background-image: linear-gradient(45deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 35%)), url(assets/front/img/airport-banner.jpeg);">
+<section class="hardware-banner position-relative overflow-hidden" id="banner-container" style="background-image: linear-gradient(45deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 35%)), url(assets/front/img/new-page-banner/1.png);">
+    <div class="banner-layer" id="banner1"></div>
+    <div class="banner-layer" id="banner2"></div>
     <div class="container-fluid">
         <div class="owl-carousel owl-theme airport-text-slider owl-loaded owl-drag">
             <div class="owl-stage-outer">
@@ -312,13 +326,18 @@
             <div class="welcome_text">
                 <div class="d-flex align-items-center">
                     <div class="animated-text alphabet-container ml15" style="opacity: 1;">
-                        <span class="alphabet" style="--i: 1; transform: scale(1); opacity: 1;">Imagine never wasting electricity, heat, or maintenance budgets again</span>
-                        <span class="alphabet" style="--i: 2; transform: scale(1); opacity: 1;">and using those</span>
-                        <span class="alphabet gra" style="--i: 3; transform: scale(1); opacity: 1;">savings to create experiences</span>
-                        <span class="alphabet" style="--i: 4; transform: scale(1); opacity: 1;">your customers will love.</span>
+                        <span class="alphabet" style="--i: 1; transform: scale(1); opacity: 1;">Never waste</span>
+                        <span class="alphabet" style="--i: 2; transform: scale(1); opacity: 1;">electricity, heat, </span>
+                        <span class="alphabet" style="--i: 3; transform: scale(1); opacity: 1;">or maintenance</span>
+                        <span class="alphabet gra" style="--i: 4; transform: scale(1); opacity: 1;">redirect savings</span>
+                        <span class="alphabet" style="--i: 5; transform: scale(1); opacity: 1;">to customer</span>
+                        <span class="alphabet" style="--i: 6; transform: scale(1); opacity: 1;">experiences.</span>
                     </div>
                 </div>
-                <p class="pt-5">QueueTech connects the dots between smart energy savings, digital engagement, and predictive maintenance — designing the right solution for your site, your people, and your future. Hardware, software, programming, installation, and service — all bundled into one simple monthly fee.</p>
+                <p class="pt-5">
+                    <p class="p-0 mb-3">Imagine never wasting electricity, heat, or maintenance budgets again and using those savings to create experiences your customers will love.</p>
+                    <p class="p-0">QueueTech connects the dots between smart energy savings, digital engagement, and predictive maintenance — designing the right solution for your site, your people, and your future. Hardware, software, programming, installation, and service — all bundled into one simple monthly fee.</p>
+                </p>
             </div>
         </div>
     </div>
@@ -330,23 +349,26 @@
     <div class="container-fluid">
         <div style="padding: 100px 0;">
             <div class="row last_row align-items-center">
-                <div class="col-lg-5 col-md-5 col-sm-12 revealleft active">
+                <div class="col-lg-6 col-md-6 col-sm-12 revealleft active">
                     <div class="welcome_text pb-4">
                         <div class="d-flex align-items-center">
                             <div class="animated-text alphabet-container ml15">
-                                <span class="alphabet" style="--i: 1;">Every building has a secret bank account — hidden in wasted electricity, heating, lighting, and repairs.
-                                </span>
+                                <span class="alphabet" style="--i: 1;">Wasted</span>
+                                <span class="alphabet" style="--i: 2;">Utilities,</span>
+                                <span class="alphabet gra" style="--i: 3;">Hidden Wealth</span>
+                                <span class="alphabet" style="--i: 4;">Inside</span>
                             </div>
                         </div>
                         <p class="pt-4">
-                            <p>QueueTech helps you unlock that hidden money. What if you could upgrade your customer experience — and get it funded by your own energy savings?</p>
-                            <p>First we save it. Then we use it to pay for better customer experiences, smarter spaces, and predictive maintenance.</p>
-                            <p>One monthly fee. Endless possibilities.</p>
-                            <p>Want to see how much you're leaving on the table? Your CFO will love it. Your customers will love it even more.</p>
+                            <p class="p-0 mb-3">Every building has a secret bank account — hidden in wasted electricity, heating, lighting, and repairs.</p>
+                            <p class="p-0 mb-3">QueueTech helps you unlock that hidden money. What if you could upgrade your customer experience — and get it funded by your own energy savings?</p>
+                            <p class="p-0 mb-3">First we save it. Then we use it to pay for better customer experiences, smarter spaces, and predictive maintenance.</p>
+                            <p class="p-0 mb-3">One monthly fee. Endless possibilities.</p>
+                            <p class="p-0">Want to see how much you're leaving on the table? Your CFO will love it. Your customers will love it even more.</p>
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-12 revealright active">
+                <div class="col-lg-6 col-md-6 col-sm-12 revealright active">
                     <div class="samrt_que-img position-relative">
                         <img class="w-100 lozad" src="assets/front/img/smart-queue.jpeg" data-loaded="true">
                         <img class="w-100 lozad show_on-hover" src="assets/front/img/smart-queue-black.jpg" data-loaded="true">
@@ -361,30 +383,39 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
     $(document).ready(function () {
-    const images = [
-      'assets/front/img/airport-banner.jpeg',
-      'assets/front/img/hos_main.png',
-      'assets/front/img/school_main.png',
-      'assets/front/img/con_main.png',
-    ];
-
-    let current = 0;
-    const gradient = "linear-gradient(45deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 35%))";
-
-    function changeBackground() {
-      $('#banner-container').fadeOut(500, function () {
-        $(this).css('background-image', `${gradient}, url(${images[current]})`).fadeIn(500);
-      });
-
-      current = (current + 1) % images.length;
-    }
-
-    // Initialize with the first image
-    $('#banner-container').css('background-image', `${gradient}, url(${images[0]})`);
-
-    // Start changing background every 5 seconds
-    setInterval(changeBackground, 5000);
-  });
+      const images = [
+        'assets/front/img/new-page-banner/1.png',
+        'assets/front/img/new-page-banner/2.png',
+        'assets/front/img/new-page-banner/3.jpeg',
+        'assets/front/img/new-page-banner/4.jpg',
+        'assets/front/img/new-page-banner/5.jpg',
+      ];
+      const gradient = "linear-gradient(45deg, rgb(0 0 0 / 10%), rgb(0 0 0 / 35%))";
+  
+      let current = 0;
+      let showingFirst = true;
+  
+      // Initialize both layers
+      $('#banner1').css('background-image', `${gradient}, url(${images[0]})`).css('opacity', 1);
+  
+      function changeBackground() {
+        const next = (current + 1) % images.length;
+        const nextImage = `${gradient}, url(${images[next]})`;
+  
+        if (showingFirst) {
+          $('#banner2').css('background-image', nextImage).css('opacity', 1);
+          $('#banner1').css('opacity', 0);
+        } else {
+          $('#banner1').css('background-image', nextImage).css('opacity', 1);
+          $('#banner2').css('opacity', 0);
+        }
+  
+        showingFirst = !showingFirst;
+        current = next;
+      }
+  
+      setInterval(changeBackground, 5000);
+    });
   </script>
 
 
