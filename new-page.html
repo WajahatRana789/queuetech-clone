@@ -286,6 +286,14 @@
         opacity: 0;
         transition: opacity 1s ease-in-out;
     }
+    .custom-form-container {
+        background: rgb(0 0 0 / 25%);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 40px 40px;
+        border: 3px solid #673AB7;
+    }
 </style>
 
 <!------------ BANNER-START ----------->
@@ -394,11 +402,11 @@
             </div>
         </div>
         <div class="join_form pt-5 mt-3">
-            <form class="row justify-content-end" id="partnerForm">
-                <!-- <div class="col-lg-12 mb-4">
-                    <h3 class="clr-white m-0">Answer These Quick Questions — See How Much You Could Save</h3>
-                </div> -->
-
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3"></div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                    <div class="custom-form-container">
+                        <form class="row justify-content-end" id="partnerForm">
                 <div class="form-group col-md-12 mb-4">
                     <label>What type of space are you managing?</label>
                     <div class="radio_btn">
@@ -502,7 +510,11 @@
                     </div>
                 </div>
                 <div class="form-errors-custom"></div>
-            </form>  
+            </form>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3"></div>
+            </div>  
         </div>
     </div>
 </section>
